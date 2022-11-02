@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Palatino';
+    src: url('fonts/Palatino-BoldItalic.eot');
+    src: local('Palatino Bold Italic'), local('Palatino-BoldItalic'),
+    url('fonts/Palatino-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Palatino-BoldItalic.woff2') format('woff2'),
+    url('fonts/Palatino-BoldItalic.woff') format('woff'),
+    url('fonts/Palatino-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('fonts/Palatino-Bold.eot');
+    src: local('Palatino Bold'), local('Palatino-Bold'),
+    url('fonts/Palatino-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Palatino-Bold.woff2') format('woff2'),
+    url('fonts/Palatino-Bold.woff') format('woff'),
+    url('fonts/Palatino-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Palatino';
+    src: local('Palatino'), local('Palatino'),
+    url('fonts/Palatino Linotype Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
