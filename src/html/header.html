@@ -181,7 +181,7 @@
                                 </svg>
                             </a>
 
-                            <a href="#" data-toggle="modal" data-target="#login">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#login">
                                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -222,3 +222,122 @@
         </div>
     </div>
 </header>
+
+
+<!--Modal Login-->
+<div class="modal fade" id="login" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header p-0">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z"
+                            fill="#242424" />
+                        <path
+                            d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z"
+                            fill="#242424" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-signin active">
+                    <div class="modal-title">
+                        Войти
+                    </div>
+                    <div class="modal-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label class="label" for="email">E-mail</label>
+                                <input type="email" class="form-control input" id="email" placeholder="Ваша почта"
+                                    name="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="label" for="password">Пароль</label>
+                                <div class="input-group mb-2">
+                                    <input type="password" class="form-control input pr-5" id="password"
+                                        placeholder="Ваш пароль" name="password">
+                                    <div class="input-group-prepend password-show-hide">
+                                        <div class="input-group-text bg-transparent border-0 eventShowPass">
+                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z"
+                                                    fill="#646464" />
+                                                <path
+                                                    d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z"
+                                                    fill="#646464" />
+                                                <path
+                                                    d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z"
+                                                    fill="#646464" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_footer">
+                                <label class="mb-0 check option" for="remember">
+                                    <input class="check__input" type="checkbox" name="remember" id="remember">
+                                    <span class="check__box"></span>
+                                    <span class="check__box-text">Запомнить меня</span>
+                                </label>
+                                <a href="#" class="filter_reset m-0">Забыли пароль?</a>
+                            </div>
+                            <div class="form-submit">
+                                <button>Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="text-btn" id="to_signup">Зарегистрироваться</button>
+                </div>
+                <div class="modal-signup">
+                    <div class="modal-title">
+                        Зарегистрироваться
+                    </div>
+                    <div class="modal-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label class="label" for="name">Ваше имя</label>
+                                <input type="text" class="form-control input" id="name" placeholder="Иван Петров"
+                                    name="name">
+                            </div>
+                            <div class="form-group">
+                                <label class="label" for="email">E-mail</label>
+                                <input type="email" class="form-control input" id="email" placeholder="Ваша почта"
+                                    name="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="label" for="password">Пароль</label>
+                                <div class="input-group mb-2">
+                                    <input type="password" class="form-control input pr-5" id="password"
+                                        placeholder="Ваш пароль" name="password">
+                                    <div class="input-group-prepend password-show-hide">
+                                        <div class="input-group-text bg-transparent border-0 eventShowPass">
+                                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z"
+                                                    fill="#646464" />
+                                                <path
+                                                    d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z"
+                                                    fill="#646464" />
+                                                <path
+                                                    d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z"
+                                                    fill="#646464" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <button>Зарегистрироваться</button>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="text-btn" id="to_signin">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

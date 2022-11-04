@@ -17,3 +17,19 @@ function ready(fn) {
         document.addEventListener('DOMContentLoaded', fn);
     }
 }
+
+
+
+
+if (document.querySelector('#to_signin')) {
+    document.querySelector('#to_signin').addEventListener('click', function () {
+        document.querySelector('.modal-signin').classList.add('active');
+        document.querySelector('.modal-signup').classList.remove('active');
+    }, false);
+}
+if (document.querySelector('#to_signup')) {
+    document.querySelector('#to_signup').addEventListener('click', function () {
+        document.querySelector('.modal-signup').classList.add('active');
+        document.querySelector('.modal-signin').classList.remove('active');
+    }, false);
+}
