@@ -153,4 +153,72 @@ body {
   color: #fff;
 }
 
+.profile_info {
+  position: relative;
+}
+
+.profile-user-exit {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: "Nunito";
+  position: absolute;
+  bottom: 20px;
+}
+
+.cng-btn {
+  min-width: 200px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #242424;
+  color: #242424;
+}
+
+.cng-btn-photo {
+  margin-bottom: 20px;
+  background-color: #242424;
+  color: #fff;
+}
+
+.profile_forms .form-group {
+  margin-bottom: 10px;
+}
+
+.select-sex span {
+  min-width: 200px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EFEFEF;
+  color: #242424;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.container input:checked ~ span {
+  border: 1px solid #242424;
+  background-color: #242424;
+  color: #fff;
+}
+
+.select-sex label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container input:checked ~ span {
+  border: none;
+}
+
 .webp .rnb-htb-cont { background-image: url(../img/howToBuy.webp); }

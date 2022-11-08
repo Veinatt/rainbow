@@ -21,8 +21,10 @@
                                     <div class="profile-user_items">Ваши товары: <b>36</b></div>
                                 </div>
                             </div>
-                            <div class="col-5 d-flex align-items-center justify-content-end profile_change_photo">
-                                <a href="#" class="change_photo">Изменить фото</a>
+                            <div
+                                class="col-5 d-flex flex-column align-items-end justify-content-center profile_change_photo">
+                                <button class="cng-btn cng-btn-photo">Изменить фото</button>
+                                <button class="cng-btn">Выйти</button>
                             </div>
                         </div>
                     </div>
@@ -31,7 +33,7 @@
                             Личная информация
                             <a href="#" class="change">Изменить пароль</a>
                         </div>
-                        <div class="profile_forms">
+                        <form class="profile_forms">
                             <div class="form-group profile_forms-username">
                                 <label class="label" for="user_name">Имя пользователя</label>
                                 <input type="text" class="form-control input" id="user_name" placeholder="Ваше имя"
@@ -40,16 +42,14 @@
                             <div class="form-group profile_forms-sex">
                                 <label class="label" for="user_name">Пол</label>
                                 <div class="select-sex">
-                                    <button class="active">
-                                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7.5 14L0 6.32363L1.17833 5.11758L7.5 11.5871L18.8217 0L20 1.20604L7.5 14Z"
-                                                fill="white" />
-                                        </svg>
-                                        Мужской
-                                    </button>
-                                    <button class="">Женский</button>
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark">Мужской</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark">Женский</span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="form-group profile_forms-email">
@@ -68,13 +68,13 @@
                                     placeholder="+7 (888) 555-35-35" name="phone" value="+7 (888) 555-35-35">
                             </div>
                             <div class="form-group profile_forms-save">
-                                <button class="profile_forms-savebutton">Сохранить</button>
+                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
                             </div>
-                        </div>
+                        </form>
                         <div class="profile_name-form">
                             Мои адреса
                         </div>
-                        <div class="profile_forms">
+                        <form class="profile_forms">
                             <div class="form-group profile_forms-username">
                                 <label class="label" for="last_name">Фамилия</label>
                                 <input type="text" class="form-control input" id="last_name" placeholder="Иванов"
@@ -109,9 +109,9 @@
                                 <input type="text" class="form-control input" id="appart" placeholder="2" name="appart">
                             </div>
                             <div class="form-group profile_forms-save">
-                                <button class="profile_forms-savebutton">Сохранить</button>
+                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
                             </div>
-                        </div>
+                        </form>
                         <div class="profile_name-form">
                             Платежные данные
                         </div>
