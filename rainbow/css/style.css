@@ -221,4 +221,38 @@ body {
   border: none;
 }
 
+.profile-links button {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #BFBFBF;
+  padding-left: 13px;
+  border: none;
+  background: none;
+}
+
+.profile-links button:last-child {
+  margin-bottom: 0;
+}
+
+.profile-links button.active {
+  position: relative;
+  padding-left: 34px;
+  color: #242424;
+}
+
+.profile-links button.active:before {
+  width: 26px;
+  height: 1px;
+  background-color: #242424;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+}
+
 .webp .rnb-htb-cont { background-image: url(../img/howToBuy.webp); }

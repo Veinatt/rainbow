@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 profile-links">
-                    <a href="#" class="active">Профиль</a>
-                    <a href="#" class="">Избранное</a>
-                    <a href="#" class="">Заказы</a>
-                    <a href="#" class="">Товары</a>
+                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
                 </div>
                 <div class="col-md-9 pl-0">
                     <div class="profile-wrapper">
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_edit-wrapper">
+                    <div class="profile_edit-wrapper tabcont" id="tab_profile">
                         <div class="profile_name-form">
                             Личная информация
                             <a href="#" class="change">Изменить пароль</a>
