@@ -1,0 +1,160 @@
+<main>
+    <div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 profile-links">
+                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
+                </div>
+                <div class="col-md-9 pl-0">
+                    <div class="profile-wrapper">
+                        <div class="row">
+                            <div class="col-md-7 d-md-flex">
+                                <div class="profile_image">
+                                    <img src="img/profile_image.png" alt="">
+                                </div>
+                                <div class="profile_info">
+                                    <div class="profile-user_name">Кирилл Дейкун</div>
+                                    <div class="profile-user_withASS">Вы с нами с марта 2022</div>
+                                    <div class="profile-user_items">Ваши товары: <b>36</b></div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-5 d-flex flex-column align-items-end justify-content-center profile_change_photo">
+                                <button class="cng-btn cng-btn-photo">Изменить фото</button>
+                                <button class="cng-btn">Выйти</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_edit-wrapper tabcont" id="tab_profile">
+                        <div class="profile_name-form">
+                            Личная информация
+                            <a href="#" class="change">Изменить пароль</a>
+                        </div>
+                        <form class="profile_forms">
+                            <div class="form-group profile_forms-username">
+                                <label class="label" for="user_name">Имя пользователя</label>
+                                <input type="text" class="form-control input" id="user_name" placeholder="Ваше имя"
+                                    name="username" value="Кирилл Дейкун">
+                            </div>
+                            <div class="form-group profile_forms-sex">
+                                <label class="label" for="user_name">Пол</label>
+                                <div class="select-sex">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark">Мужской</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark">Женский</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group profile_forms-email">
+                                <label class="label" for="user_email">E-mail</label>
+                                <input type="email" class="form-control input" id="user_email" placeholder="Ваша почта"
+                                    name="user_email" value="info@idile.ru">
+                            </div>
+                            <div class="form-group profile_forms-birthday">
+                                <label class="label" for="birthday">Дата рождения</label>
+                                <input type="date" class="form-control input" id="birthday" placeholder="Дата рождения"
+                                    name="birthday" value="01.04.2022">
+                            </div>
+                            <div class="form-group profile_forms-username">
+                                <label class="label" for="phone">Телефон</label>
+                                <input type="email" class="form-control input" id="phone"
+                                    placeholder="+7 (888) 555-35-35" name="phone" value="+7 (888) 555-35-35">
+                            </div>
+                            <div class="form-group profile_forms-save">
+                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
+                            </div>
+                        </form>
+                        <div class="profile_name-form">
+                            Мои адреса
+                        </div>
+                        <form class="profile_forms">
+                            <div class="form-group profile_forms-username">
+                                <label class="label" for="last_name">Фамилия</label>
+                                <input type="text" class="form-control input" id="last_name" placeholder="Иванов"
+                                    name="last_name">
+                            </div>
+                            <div class="form-group profile_forms-ml20">
+                                <label class="label" for="city">Город</label>
+                                <input type="text" class="form-control input" id="city" placeholder="Москва"
+                                    name="city">
+                            </div>
+                            <div class="form-group profile_forms-username">
+                                <label class="label" for="first_name">Имя</label>
+                                <input type="text" class="form-control input" id="first_name" placeholder="Иван"
+                                    name="first_name">
+                            </div>
+                            <div class="form-group profile_forms-ml20">
+                                <label class="label" for="address">Адрес</label>
+                                <input type="text" class="form-control input" id="address" placeholder="ул, Ленина"
+                                    name="address">
+                            </div>
+                            <div class="form-group profile_forms-username">
+                                <label class="label" for="patronymic">Отчество</label>
+                                <input type="text" class="form-control input" id="patronymic" placeholder="Отчество"
+                                    name="patronymic">
+                            </div>
+                            <div class="form-group profile_forms-house">
+                                <label class="label" for="house">Дом</label>
+                                <input type="text" class="form-control input" id="house" placeholder="12" name="house">
+                            </div>
+                            <div class="form-group profile_forms-house">
+                                <label class="label" for="appart">Квартира</label>
+                                <input type="text" class="form-control input" id="appart" placeholder="2" name="appart">
+                            </div>
+                            <div class="form-group profile_forms-save">
+                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
+                            </div>
+                        </form>
+                        <div class="profile_name-form">
+                            Платежные данные
+                        </div>
+                        <div class="profile_forms-payment">
+                            <p>
+                                Платежные карты и реквизиты, которые <br> вы указали на нашем сайте. Вы сможете
+                                использовать
+                                <br> их для оплаты товаров или получения выплат за продажи
+                            </p>
+                            <div class="profile_forms-cards">
+                                <div class="profile_forms-cards_wrapper">
+                                    <label class="check option" for="payment">
+                                        <input class="check__input" type="checkbox" name="payment" id="payment">
+                                        <span class="check__box"></span>
+                                        <span class="check__box-text"></span>
+                                    </label>
+                                    <div class="custom-wrapper-cards">
+                                        <div class="span">
+                                            <div><b>Реквизиты (Юр.лицо, ИП)</b></div>
+                                            <div class="muted">У вас нет добавленных реквизитов</div>
+                                        </div>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                                <div class="profile_forms-cards_wrapper">
+                                    <label class="check option" for="cards">
+                                        <input class="check__input" type="checkbox" name="payment" id="cards">
+                                        <span class="check__box"></span>
+                                        <span class="check__box-text"></span>
+                                    </label>
+                                    <div class="custom-wrapper-cards">
+                                        <div class="span">
+                                            <div><b>Карта для оплаты</b></div>
+                                            <div class="muted">Дебетовая карта МИР **** **** **** 4567</div>
+                                        </div>
+                                        <a href="#">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

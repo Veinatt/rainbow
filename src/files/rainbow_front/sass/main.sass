@@ -1,0 +1,1418 @@
+@import "vars"
+html
+  scroll-behavior: smooth
+body
+  font-family: $nunito
+  overflow-x: hidden
+
+.header
+  &-icon
+    &-margin
+      margin-right: 15px
+  &-top
+    height: 46px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    color: $dark
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-bg
+      background-color: #EEEEEE
+    &-bottom
+      //padding: 50px 0 0 0
+      position: relative
+      z-index: -1
+      background: #f8f8f8
+      &_links
+        display: flex
+        //margin-top: 50px
+        justify-content: space-between
+        a
+          display: block
+          font-family: $nunito
+          font-style: normal
+          font-weight: 300
+          font-size: 18px
+          line-height: 25px
+          color: #858585
+          padding: 10px
+          transition: .3s all
+          border-top: 1px solid transparent
+          &:hover
+            color: $dark
+            border-top: 1px solid #E7E7E7
+          &.active
+            border-top: 1px solid #E7E7E7
+            color: $dark
+
+
+  &-navs
+    display: flex
+    //justify-content: space-between
+    padding-left: 20px
+    &-items
+      display: flex
+      max-width: 370px
+      width: 100%
+      justify-content: space-between
+      align-items: center
+    .btn-sale
+      margin-right: 65px
+.email a
+  color: $dark
+  text-decoration: none
+
+.search-form
+  max-width: 493px
+  padding: 8px 0
+  background: #fff
+  height: 53px
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02)
+  transform: translateX(-20px)
+
+.search-button
+  background: transparent
+  position: relative
+  left: -10px
+  z-index: 10
+  margin-right: 8px
+
+a
+  text-decoration: none !important
+
+.btn-sale
+  font-family: $nunito
+  border: 1px solid #242424
+  font-style: normal
+  font-weight: 300
+  font-size: 15px
+  line-height: 20px
+  color: $dark
+  padding: 11px 27px
+  &:hover
+    color: #FFFFFF
+    background: $dark
+
+.custom-input
+  padding-left: 10px
+  margin-left: 20px
+.custom-select
+  background: #fff url("data:image/svg+xml,%3Csvg width='6' height='5' viewBox='0 0 6 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 5L5.88675 1.26184e-07L0.113249 -1.26184e-07L3 5Z' fill='%23646464'/%3E%3C/svg%3E%0A") right 0.65rem center/8px 10px no-repeat
+  background-position-y: 16px
+  padding-left: 17px
+.catalog-input
+  position: relative
+  &:after
+    content: ""
+    width: 1px
+    height: 31px
+    display: block
+    right: -10px
+    top: 3px
+    z-index: 2
+    background-color: #A19B9B
+    position: absolute
+  //border-right: 2px solid #A19B9B
+
+*:focus
+  outline: 0
+  box-shadow: none !important
+
+.slides
+  height: 823px
+  max-height: 100%
+  .slide
+    background-size: 100%
+    background-repeat: no-repeat
+    height: 823px
+    max-height: 100%
+    &-content
+      height: 100%
+    &-title
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 96px
+      line-height: 130px
+      color: #FFFFFF
+    &-btn
+      border: 1px solid #fff
+      padding: 12px 0
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 24px
+      line-height: 33px
+      text-align: center
+      color: #FFFFFF
+      min-width: 237px
+      display: block
+      max-width: max-content
+
+
+.section
+  padding: 100px 0 0 0
+  &-recomendation
+    padding: 74px 0 0 0
+  &_title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #000000
+    margin-bottom: 60px
+    &.bordered
+      position: relative
+      &:after, &:before
+        content: ""
+        width: calc(100% - 55.5%)
+        height: 1px
+        position: absolute
+        background: #D1D1D1
+        top: 50%
+      &:after
+        right: -200px
+      &:before
+        left: -200px
+.catalog.items
+  .item
+    max-width: 302px
+    &-border
+      border: 1px solid #EFEFEF
+      text-align: center
+      padding: 10px 0
+    &_articul
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 10px
+      line-height: 14px
+      color: #646464
+    &_name
+      max-width: 196px
+      margin: 2px auto 0
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: $dark
+    &_old_price
+      margin-top: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      text-decoration-line: line-through
+      color: #646464
+    &_new_price
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: $dark
+.add-cart > svg
+  margin-left: 32px
+.swiper-button-disabled
+  display: none
+.swiper-button-next, .swiper-button-prev
+  width: 120px
+  right: 210px
+  &:after
+    content: ''
+
+.swiper-horizontal > .swiper-scrollbar
+  background: #A19B9B
+  height: 1px
+  bottom: 5px
+  width: 100%
+  left: 0
+.swiper-scrollbar-drag
+  height: 5px
+  top: -2px
+  background: $dark
+  border-radius: 0
+
+.catalog-slides
+  padding-bottom: 25px
+.categories
+  &_item
+    background-size: 100%
+    background-repeat: no-repeat
+    display: block
+    max-height: 100%
+    height: 340px
+    padding-left: 30px
+    padding-top: 230px
+  &_name, &_description
+    font-weight: 400
+    font-style: normal
+    color: #FFFFFF
+  &_name
+    font-family: $palatino
+    font-size: 40px
+    line-height: 54px
+  &_description
+    font-family: $nunito
+    font-size: 16px
+    line-height: 22px
+
+
+.trends
+  padding-bottom: 30px
+  .item
+    max-width: 283px
+    &_brand
+      margin-top: 20px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 32px
+      color: #000000
+    &_category
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: $dark
+      margin-top: 5px
+
+
+video
+  width: 100%
+  max-height: 670px
+  object-fit: cover
+
+.video
+  &-section
+    position: relative
+    max-height: 670px
+  &-content
+    top: calc(100%/2 - 150px)
+    position: absolute
+  &_title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+  &_description
+    margin-top: 20px
+    max-width: 652px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+  &_btn
+    margin-top: 40px
+    display: block
+    max-width: max-content
+    padding: 14px 0
+    min-width: 212px
+    background: $dark
+    color: #FFFFFF
+    text-align: center
+    font-family: $nunito
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    transition: .3s all
+    &:hover
+      background-color: #fff
+      color: $dark
+
+.blend-mode-video
+  width: 100%
+  height: 100%
+  background: rgba(203,198,197, .5)
+  position: absolute
+  top: 0
+  mix-blend-mode: multiply
+  pointer-events: none
+  left: 0
+
+.actual
+  display: flex
+  flex-wrap: wrap
+  .item
+    max-width: 504px
+    width: 100%
+    &_title
+      text-align: center
+      margin-top: 15px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+    &_description
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: $dark
+
+
+.how_work
+  background: #F8F8F8
+  margin-top: 100px
+  &-padding
+    padding: 100px 0
+  &_wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 75px 0
+  &_content
+    display: flex
+    justify-content: space-around
+  &_item
+    max-width: 255px
+    text-align: center
+    position: relative
+    &:after
+      content: ''
+      width: 1px
+      background: #EFEFEF
+      height: 146px
+      position: absolute
+      right: -65px
+      top: 22%
+    &:last-child
+      &:after
+        content: unset
+
+    &-image
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 82px
+      height: 82px
+      background: $dark
+      border-radius: 50px
+    &-title
+      margin-top: 15px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 27px
+      color: $dark
+    &-text
+      margin-top: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: $dark
+
+
+  &_title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+  &_description
+    margin: 20px 0
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $dark
+    max-width: 814px
+  &_buttons
+    display: flex
+    margin-top: 20px
+    a
+      margin-top: 0
+      min-width: 298px
+      background: transparent
+      color: $dark
+      border: 1px solid $dark
+      &.active
+        background: $dark
+        color: #FFFFFF
+
+
+#sticker
+  background-color: #F8F8F8
+  padding: 50px 0
+
+.footer
+  background-color: $dark
+  padding: 96px 0
+  .before-line
+    position: relative
+    &:after
+      content: ""
+      width: 1px
+      height: 247px
+      display: block
+      position: absolute
+      right: 30px
+      top: -45px
+      background: rgba(48, 48, 48, 1)
+
+  .row
+    height: 155px
+  &-two
+    background-color: #1E1E1E
+    padding: 22px 0
+    &-container
+      display: flex
+      justify-content: center
+    a
+      display: flex
+      align-items: center
+      margin-left: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      padding: 0 75px
+      color: #8E8E8E
+      border-right: 1px solid #303030
+      svg
+        margin-left: 15px
+      &:last-child
+        border-right: 0
+      &:hover
+        color: #FFFFFF
+        text-decoration: underline !important
+    .row
+      justify-content: center
+      align-items: center
+  &-title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 27px
+    color: #FFFFFF
+    text-transform: uppercase
+    margin-left: 10px
+    margin-bottom: 10px
+  a
+    display: block
+    margin-left: 10px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #8E8E8E
+    max-width: max-content
+    &:hover
+      color: #FFFFFF
+      text-decoration: underline !important
+  .input-group-text, input[type="email"]
+    background-color: #FFFFFF
+    border-radius: 0
+    border: 0
+    max-width: 227px
+  .input-group
+    margin-left: 10px
+
+
+label.custom-radio
+  margin-bottom: 10px
+  display: flex
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #8E8E8E
+  input
+    position: absolute
+    left: -9999px
+    &:checked + span
+      &:before
+        box-shadow: inset 0 0 0 3px #242424
+        background: white
+        border: 1px solid white
+
+  span
+    display: flex
+    align-items: center
+    padding: 0 10px
+    border-radius: 99em
+    transition: 0.25s ease
+
+    &:before
+      display: flex
+      flex-shrink: 0
+      content: ""
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      margin-right: 10px
+      transition: 0.25s ease
+      box-shadow: inset 0 0 0 0.125em #8E8E8E
+
+.subscribe
+  margin-left: 10px
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 12px
+  line-height: 19px
+  color: #FFFFFF
+  margin-bottom: 0
+
+.categ-blocks
+  display: flex
+  flex-wrap: wrap
+  .categories_item
+    width: 50%
+
+.swiper-pagination-bullet
+  background: #BFBFBF
+.swiper-pagination-bullet-active
+  background: #323232
+
+.mobile
+  display: none
+  position: fixed
+  z-index: 3
+  width: 100%
+
+.header-wrapper
+  display: none
+.menu
+  &_bottom
+    display: none
+
+.header-navs-items
+  svg path
+    &:hover
+      fill: $dark
+
+.dropdown
+  &-menu
+    box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02)
+    border: none
+    border-radius: 0
+    background-color: #FFFFFF
+    min-width: 140px
+  &-item
+    position: relative
+    padding: 15px 20px
+    &.active, &:active
+      background-color: $dark
+    &::after
+      content: ""
+      width: calc(100% - 40px)
+      height: 0.7px
+      background-color:  #EFEFEF
+      position: absolute
+      bottom: 0
+      display: block
+
+.z-position
+  z-index: 2
+  position: relative
+
+.filter
+  display: flex
+
+  .item
+    max-width: 282px !important
+    &_img
+      width: 100%
+
+.breadcrumb
+  padding: 8px
+  margin-bottom: 0
+  background-color: transparent
+  &-wrapper
+    margin-top: 30px
+    border-bottom: 1px solid #EFEFEF
+    border-top: 1px solid #EFEFEF
+    margin-bottom: 40px
+  &-item
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    color: #858585
+    &:hover, &.active a
+      text-decoration: underline !important
+      color: $dark
+    a
+      color: #858585
+      &:hover
+        color: $dark
+
+
+.breadcrumb-item + .breadcrumb-item::before
+  content: url("data:image/svg+xml,%3Csvg width='20' height='1' viewBox='0 0 20 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.8' x2='20' y2='0.8' stroke='%23858585' stroke-width='0.4'/%3E%3C/svg%3E%0A")
+  padding: 0 20px
+  position: relative
+  top: -3px
+
+
+//Фильтр
+.irs--square .irs-handle
+  border-radius: 100%
+  background-color: #000 !important
+.irs
+  height: 100%
+.irs--square
+  height: 27px !important
+.irs--square .irs-line, .irs--square .irs-bar
+  height: 2px !important
+  top: 0
+.irs--square .irs-handle
+  top: -6px !important
+  width: 12px !important
+  height: 12px !important
+
+.irs--square .irs-bar, .irs--square .irs-line
+  top: 0 !important
+
+.irs--square .irs-min, .irs--square .irs-max
+  top: 15px !important
+  visibility: visible !important
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 15px !important
+  line-height: 20px !important
+  color: $dark !important
+  background: transparent !important
+  padding: 0 5px !important
+
+.filters
+  &_block
+    border:  1px solid #EFEFEF
+  &_brands
+    max-height: 400px
+    .swiper-slide
+      height: 25px !important
+      margin-bottom: 15px
+  &_content
+    display: none
+    &.active
+      display: block
+  &_title
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 18px
+    line-height: 25px
+    color: $dark
+    background-color: #F8F8F8
+    padding: 18px 20px
+    background-position: 93%
+    background-repeat: no-repeat
+    border-bottom: 1px solid #EFEFEF
+    cursor: pointer
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 10L11.7735 2.52368e-07L0.226497 -2.52368e-07L6 10Z' fill='%23242424'/%3E%3C/svg%3E%0A")
+    &.active
+      border-bottom: 1px solid transparent
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0L11.7735 10L0.226497 10L6 0Z' fill='%23242424'/%3E%3C/svg%3E%0A")
+  &_range
+    margin: 20px 0
+    padding: 0 21px
+
+
+.option
+  display: block
+  max-width: max-content
+
+/* Check
+
+.check__input
+  position: absolute
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.check__box
+  position: absolute
+  width: 24px
+  height: 24px
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='24' height='24' stroke='%23E0E0E0'/%3E%3C/svg%3E%0A")
+  background-size: 100%
+  &-text
+    margin-left: calc(24px + 16px)
+
+/* Checked
+
+.check__input
+  &:checked + .check__box
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='23' fill='%23242424'/%3E%3Cpath d='M9.5 18L2 10.3236L3.17833 9.11758L9.5 15.5871L20.8217 4L22 5.20604L9.5 18Z' fill='white'/%3E%3C/svg%3E%0A")
+
+  &:active + .check__box
+    opacity: .8
+
+/* Active
+.swiper-wrapper.disabled
+  transform: translate3d(0px, 0, 0) !important
+
+.swiper-pagination.disabled
+  display: none
+
+.display-mobile
+  display: none
+
+.pagination
+  display: flex
+  margin-top: 30px
+  justify-content: center
+  a
+    display: block
+    padding: 4px 10px
+    margin-right: 25px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #222222
+    border: 1px solid $dark
+    transition: .2s all
+    &.active, &:hover
+      background-color: $dark
+      color: #FFFFFF
+
+    &:last-child
+      margin-right: 0
+
+.filter
+  &-padding
+    padding-bottom: 100px
+
+.garantee
+  &-section
+    padding: 15px 0 0 0
+    .video-content
+      top: calc(100%/2 - 95px)
+    .video_description
+      max-width: 574px
+  &-padding
+    padding: 40px 0
+
+    .how_work
+      &_description
+        max-width: 470px
+        margin-bottom: 10px
+
+.filter
+  .item_img
+    img
+      width: 100%
+  &_reset
+    margin-top: 15px
+    margin-bottom: 20px
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-align: center
+    text-decoration-line: underline !important
+    color: #646464
+    display: block
+
+  &_sale_btn
+    display: block
+    max-width: max-content
+    padding: 14px 45px
+    background: $dark
+    color: #FFFFFF !important
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    margin: 0 auto
+
+
+// Modal
+
+.modal
+  &-backdrop
+    backdrop-filter: blur(6px)
+    background-color: rgba(36,36,36,.21)
+  &_footer
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      font-size: 16px
+      line-height: 22px
+  &-form
+    max-width: 493px
+    width: 100%
+    margin: 39px auto 0 auto
+    .form-group
+      margin-bottom: 10px
+  &-title
+    width: 100%
+    text-align: center
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+    margin-top: 82px
+
+
+  &-header
+    border: 0
+  &-content
+    background-color: #F8F8F8
+    border: none
+    border-radius: 0
+
+  &-dialog
+    max-width: 800px
+  .close
+    opacity: 1
+    margin: unset
+    position: absolute
+    right: 26px
+    top: 26px
+    z-index: 2
+    &:hover
+      opacity: .5
+
+
+.input
+  border: 1px solid #EFEFEF
+  padding: 15px
+  font-family: $nunito
+  height: 100%
+  max-height: 53px
+  font-style: normal
+  background-color: transparent
+  border-radius: 0
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #242424
+
+.label
+  margin-bottom: 5px
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 19px
+  color: #646464
+
+.password-show-hide
+  .input-group-text
+    z-index: 3
+    position: absolute
+    right: 0
+    top: calc(100%/2 - 17px)
+.eventShowPass
+  cursor: pointer
+
+
+.form
+  &-submit
+    button
+      display: block
+      max-width: max-content
+      margin: 30px  auto 110px auto
+      border: 0
+      background-color: $dark
+      padding: 16px 78px
+      color: #FFFFFF
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+.swiper-slide-thumb-active
+  opacity: 1
+
+.product
+  &_desc
+    margin-top: 10px
+    line-height: 22px
+    color: $dark
+    font-weight: 300
+  &_characteristic
+    &-content
+      margin-bottom: 30px
+      .info
+        &:first-child
+          margin-top: 10px
+        display: flex
+        font-family: $nunito
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: #242424
+        margin-bottom: 10px
+    .dotts
+      color: #CCCCCC
+
+  &_like
+    display: block
+    font-family: $nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-decoration-line: underline !important
+    text-decoration-skip-ink: none
+    color: #242424
+    svg
+      margin-right: 30px
+
+  &_prices
+    .item_new_price
+      font-weight: 600 !important
+      font-size: 20px !important
+      line-height: 27px !important
+  &_prices, &_sizes, &_like, &_cart
+    margin-top: 30px
+  &_articul
+    margin-top: 5px
+  &_name
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #000000
+    max-width: 332px
+
+  &_cart
+    min-width: 200px
+    text-align: center
+    border: 1px solid transparent
+
+    &:hover
+      background-color: transparent
+      color: $dark !important
+      border: 1px solid $dark
+  &_sizes
+    span
+      display: block
+      font-family: $nunito
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #242424
+      margin-bottom: 10px
+  &_size
+    min-width: 57px
+    display: inline
+    justify-content: center
+    align-items: center
+    padding: 14px 6px
+    background-color: transparent
+    border: 1px solid #DEDEDE
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #242424
+    &:focus
+      background: $dark
+      color: #FFFFFF
+  &_images
+    display: flex
+    flex-wrap: wrap
+  &_image
+    max-width: 464px
+    width: 100%
+    margin-right: 16px
+    margin-bottom: 16px
+    img
+      width: 100%
+  &-padding
+    padding-bottom: 100px
+  &-section
+    .video-content
+      top: calc(50% - 205px)
+
+
+
+.bg_for_users
+  background-image: url("../img/for_users.png")
+  background-size: 100%
+  padding: 142px 0
+.for_users
+  &-wrapper
+    max-width: 873px
+    margin: 0 auto
+  &-title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #FFFFFF
+    margin-bottom: 30px
+    text-align: center
+
+  &-desc
+    p
+      margin-bottom: 15px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #FFFFFF
+
+.section
+  &-why-buy
+    padding: 65px 0 0 0
+
+    .section-title
+      color: #252525
+
+    .col-10
+      padding: 19px 0
+      position: relative
+      &:after, &.br-top:before
+        width: 1014px
+        content: ""
+        height: 1px
+        background-color: #EFEFEF
+        position: absolute
+        left: -315px
+        bottom: 0
+      .section
+        &-title, &-sub
+          font-size: 18px
+          line-height: 25px
+    .br-top
+      &:before
+        top: 0
+        width: 1098px !important
+.section-who-partner
+  margin: 75px auto
+  &_title
+    text-align: center
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #252525
+  &_desc
+    margin-top: 30px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #252525
+    max-width: 980px
+    p
+      margin-bottom: 15px
+.care_block
+  background-color: #F8F8F8
+  padding: 30px 0
+  .section-who-partner
+    &_title, &_desc
+      text-align: left
+.for_sales
+  &:before, &:after
+    background-color: #999999
+
+.display-lg
+  display: block
+.section-why-buy
+  .col-2
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 48px
+    line-height: 65px
+    color: #000000
+.faq
+  padding: 90px 0 0 0
+  .section_title.bordered
+    &:before, &:after
+      width: calc(1550px - 100% + 585px)
+.collapse
+  &-block
+    background-color: #F8F8F8
+    padding: 50px 0 100px 0
+    .border-1
+      position: relative
+      padding: 20px 0
+      &:before, &:after
+        content: ""
+        width: calc(100% + 201px)
+        left: -201px
+        height: 1px
+        position: absolute
+        background-color: #EFEFEF
+      &:before
+        top: 0
+      &:after
+        bottom: 0
+
+  &-header
+    cursor: pointer
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 32px
+    line-height: 43px
+    color: #242424
+    &.active
+      svg
+        rect:nth-child(2)
+          transform: translateX(-100%)
+  &-content
+    opacity: 0
+    height: 0
+    transition: .3s all
+    &.active
+      padding-top: 30px
+      transition: .3s all
+      opacity: 1
+      height: 100%
+
+.profile
+  &-links
+    height: max-content
+    background-color: #F8F8F8
+    padding: 20px 20px 20px 7px
+    border: 1px solid #EFEFEF
+    border-right: none
+    a
+      display: block
+      margin-bottom: 20px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: #BFBFBF
+      padding-left: 13px
+      &:last-child
+        margin-bottom: 0
+      &.active
+        position: relative
+        padding-left: 34px
+        color: $dark
+        &:before
+          width: 26px
+          height: 1px
+          background-color: $dark
+          position: absolute
+          top: 50%
+          left: 0
+          content: ""
+
+  &-wrapper
+    border: 1px solid #EFEFEF
+    background-color: #F8F8F8
+  &-content
+    padding: 110px 0 100px 0
+  &_info
+    margin-left: 19px
+    padding: 20px 0
+  &-user
+    &_name
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+    &_withASS
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      color: #646464
+      margin-top: 5px
+    &_items
+      margin-top: 15px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: #242424
+      b
+        margin-left: 5px
+        color: $dark
+        font-weight: 700
+  &_change_photo
+    padding-right: 40px
+  &_edit
+    &-wrapper
+      padding: 30px 0 35px 20px
+      border: 1px solid #EFEFEF
+      border-top: none
+  &_name
+    &-form
+      display: flex
+      align-items: center
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+      a
+        height: 39px
+        margin-left: 60px
+        display: block
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: underline !important
+        color: #646464
+  &_forms
+    margin-top: 20px
+    display: flex
+    flex-wrap: wrap
+    &-username, &-email, &-ml20
+      max-width: 493px
+      width: 100%
+    &-house
+      max-width: 171px
+      width: 100%
+    &-sex
+      margin-left: 20px
+      label
+        display: block
+      .select-sex
+        display: flex
+      .select-sex button
+        min-width: 163px
+        margin-right: 20px
+        display: flex
+        max-width: max-content
+        align-items: center
+        justify-content: center
+        height: 53px
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+        background-color: transparent
+        border: 1px solid #EFEFEF
+        &:focus, &.active
+          color: #FFFFFF
+          background-color: $dark
+          border: none
+        &:last-child
+            margin-right: 0
+        svg
+          margin-right: 15px
+    &-birthday, &-save
+      margin-left: 20px
+      input
+       width: 236px
+    &-save
+      margin-bottom: 0
+      padding-top: 26px
+    &-savebutton
+      width: 200px
+      padding: 14.5px 0
+      max-width: 100%
+      border: none
+      background: $dark
+      color: #FFFFFF
+    &-ml20, &-house
+      margin-left: 20px
+    &-payment
+      p
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+        max-width: 456px
+    &-cards
+      margin-top: 35px
+      &_wrapper
+        display: flex
+        align-items: center
+        max-width: 574px
+        width: 100%
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+
+
+
+.custom-wrapper-cards
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-decoration: underline !important
+    text-decoration-skip-ink: none
+    color: #646464
+.muted
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #8A8A8A
+.change_photo
+  min-width: 200px
+  max-width: max-content
+  padding: 14px 0
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid $dark
+  color: $dark
+  &:hover
+    background-color: $dark
+    color: #FFFFFF
+
+
+//Адаптив
+@import "media"
