@@ -239,10 +239,51 @@ body {
   margin-bottom: 0;
 }
 
+.profile-wrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 243/211;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.profile-wrapper {
+  height: 100%;
+}
+
+.profile-wrapper > div {
+  height: 100%;
+}
+
 .profile-links button.active {
   position: relative;
   padding-left: 34px;
   color: #242424;
+}
+
+.profile_list-wrapper {
+  padding: 30px 0 0 0;
+  border: 1px solid #EFEFEF;
+  border-top: none;
+}
+
+.tabcont {
+  display: none;
+}
+
+.fav-stat {
+  display: flex;
+  align-items: center;
+  font-family: "Palatino";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+  margin-left: 20px;
 }
 
 .profile-links button.active:before {
@@ -253,6 +294,50 @@ body {
   top: 50%;
   left: 0;
   content: "";
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item-list .item {
+  width: 25%;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  font-family: "Nunito";
+}
+
+.item-list .item img {
+  width: 100%;
+  aspect-ratio: 282/346;
+}
+
+.item-list .item .item-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-list .item .item_articul {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+.item-list .item .item_name {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.item-list .item .item_price {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 .webp .rnb-htb-cont { background-image: url(../img/howToBuy.webp); }
