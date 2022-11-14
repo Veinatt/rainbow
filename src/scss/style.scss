@@ -20,6 +20,15 @@ body {
 
 $bl: #242424;
 
+.logo {
+	width: 100%
+}
+
+.logo img {
+	width: 100%;
+	object-fit: contain;
+}
+
 .rnb-title {
 	width: 100%;
 	text-align: center;
@@ -569,7 +578,7 @@ $bl: #242424;
 			font-size: 16px;
 			line-height: 22px;
 			color: #242424;
-			display:flex;
+			display: flex;
 			justify-content: space-between;
 			align-items: center
 		}
@@ -592,14 +601,14 @@ $bl: #242424;
 		.dropdownn .dropdownn-menu {
 			position: absolute;
 			border: 1px solid #EFEFEF;
-			border-top:none;
+			border-top: none;
 			z-index: 9;
 			border-radius: 0;
 			display: none;
 			padding: 0;
 			list-style: none;
 			cursor: unset;
-			width:100%
+			width: 100%
 		}
 
 		.dropdownn .dropdownn-menu>div {
@@ -608,8 +617,9 @@ $bl: #242424;
 			cursor: pointer;
 			padding: 5px;
 			margin: 0 !important;
+
 			&:hover {
-				background-color:#f8f8f8
+				background-color: #f8f8f8
 			}
 		}
 

@@ -33,5 +33,20 @@ if (document.querySelector('#to_signup')) {
         document.querySelector('.modal-signin').classList.remove('active');
     }, false);
 }
-document.getElementById("defaultOpen").click();
+if(document.querySelector('#defaultOpen')) {
+    document.getElementById("defaultOpen").click();
+}
 
+$('.dropdownn').click(function () {
+    $(this).attr('tabindex', 1).focus();
+    $(this).toggleClass('active');
+    $(this).find('.dropdownn-menu').slideToggle(300);
+});
+$('.dropdownn').focusout(function () {
+    $(this).removeClass('active');
+    $(this).find('.dropdownn-menu').slideUp(300);
+});
+$('.dropdownn .dropdownn-menu > div').click(function () {
+    $(this).parent().parent().find('.slct-span').text($(this).text());
+    $(this).parent().parent().find('.slct-input').attr('value', $(this).attr('id'));
+});

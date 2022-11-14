@@ -35,6 +35,16 @@ body {
   scroll-behavior: smooth;
 }
 
+.logo {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .rnb-title {
   width: 100%;
   text-align: center;
