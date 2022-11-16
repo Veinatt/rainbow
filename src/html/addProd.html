@@ -122,7 +122,7 @@
                 </div>
                 <div class="tt-cont img-add-contt">
                     <div class="img-cont">
-                        <button class="empty-img">
+                        <button type="button" class="empty-img">
                             <svg width="110" height="92" viewBox="0 0 110 92" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -131,17 +131,23 @@
                             </svg>
 
                         </button>
+                        <img id="result">
                     </div>
                     <div class="img-cont">
-                        <button class="add-img">
-                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.76527e-07 39.8077L0 35.7692L75 35.7692V39.8077L1.76527e-07 39.8077Z"
-                                    fill="#DADADA" />
-                                <path d="M35.7692 0H39.8077V75H35.7692V0Z" fill="#DADADA" />
-                            </svg>
+                        <div class="upload">
+                            <button type="button" onclick="document.getElementById('file').click();" class="add-img">
+                                <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.76527e-07 39.8077L0 35.7692L75 35.7692V39.8077L1.76527e-07 39.8077Z"
+                                        fill="#DADADA" />
+                                    <path d="M35.7692 0H39.8077V75H35.7692V0Z" fill="#DADADA" />
+                                </svg>
 
-                        </button>
+                            </button>
+                            <input type="file" style="display:none;"
+                                accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image"
+                                required='required' multiple/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,3 +280,22 @@
         </form>
     </div>
 </main>
+<script>
+    FReader = new FileReader();
+
+    // событие, когда файл загружается
+    FReader.onload = function (e) {
+        document.querySelector("#result").style.display = 'block';
+        document.querySelector(".empty-img").style.display = 'none';
+        document.querySelector("#result").src = e.target.result;
+    };
+
+    // выполнение функции при выборки файла
+    document.querySelector("#file").addEventListener("change", loadImageFile);
+
+    // функция выборки файла
+    function loadImageFile() {
+        var file = document.querySelector("#file").files[0];
+        FReader.readAsDataURL(file);
+    }
+</script>

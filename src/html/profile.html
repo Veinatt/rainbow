@@ -23,7 +23,10 @@
                             </div>
                             <div
                                 class="col-5 d-flex flex-column align-items-end justify-content-center profile_change_photo">
-                                <button class="cng-btn cng-btn-photo">Изменить фото</button>
+                                <div class="upload">
+                                    <button onclick="document.getElementById('file').click();" class="cng-btn cng-btn-photo">Изменить фото</button>
+                                    <input type="file" style="display:none;" accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image" required='required'/>
+                                </div>
                                 <button class="cng-btn">Выйти</button>
                             </div>
                         </div>

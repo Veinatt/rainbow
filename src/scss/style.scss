@@ -427,7 +427,12 @@ $bl: #242424;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-
+				img {
+					display:none;
+					width:100%;
+					height:100%;
+					object-fit:cover;
+				}
 				button {
 					border: none
 				}
@@ -452,7 +457,10 @@ $bl: #242424;
 			}
 		}
 	}
-
+	.upload {
+		width:100%;
+		height:100%;
+	}
 	.select-condition {
 		display: flex;
 		flex-direction: column;

@@ -439,6 +439,14 @@ body {
   align-items: center;
 }
 
+.add-prod-form .top-cont .tt-cont .img-cont img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .add-prod-form .top-cont .tt-cont .img-cont button {
   border: none;
 }
@@ -459,6 +467,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.add-prod-form .upload {
+  width: 100%;
+  height: 100%;
 }
 
 .add-prod-form .select-condition {
