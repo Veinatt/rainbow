@@ -249,11 +249,26 @@ body {
   margin-bottom: 0;
 }
 
-.profile-wrapper img {
-  height: 100%;
+.world-trends,
+.actuals {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 243/211;
+}
+
+.world-trends {
+  aspect-ratio: 41/100;
+}
+
+.actuals {
+  aspect-ratio: 50/61;
+}
+
+.profile-wrapper img {
+  height: 216px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 243/216;
 }
 
 .pl-0 {

@@ -146,7 +146,7 @@
                             </button>
                             <input type="file" style="display:none;"
                                 accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image"
-                                required='required' multiple/>
+                                required='required' multiple />
                         </div>
                     </div>
                 </div>
@@ -295,6 +295,10 @@
 
     // функция выборки файла
     function loadImageFile() {
+        if (document.querySelector("#file").files.length > 5) {
+            alert(`Необходимо загрузить до 5 фото`);
+            return;
+        }
         var file = document.querySelector("#file").files[0];
         FReader.readAsDataURL(file);
     }

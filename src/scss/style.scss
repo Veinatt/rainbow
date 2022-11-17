@@ -236,10 +236,24 @@ $bl: #242424;
 	margin-bottom: 0;
 }
 
-.profile-wrapper img {
-	height: 100%;
+.world-trends,
+.actuals {
+	width: 100%;
 	object-fit: cover;
-	aspect-ratio: 243 / 211;
+}
+
+.world-trends {
+	aspect-ratio: 41/100;
+}
+
+.actuals {
+	aspect-ratio: 50/61;
+}
+
+.profile-wrapper img {
+	height: 216px;
+	object-fit: cover;
+	aspect-ratio: 243 / 216;
 }
 
 .pl-0 {
@@ -427,12 +441,14 @@ $bl: #242424;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+
 				img {
-					display:none;
-					width:100%;
-					height:100%;
-					object-fit:cover;
+					display: none;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
+
 				button {
 					border: none
 				}
@@ -457,10 +473,12 @@ $bl: #242424;
 			}
 		}
 	}
+
 	.upload {
-		width:100%;
-		height:100%;
+		width: 100%;
+		height: 100%;
 	}
+
 	.select-condition {
 		display: flex;
 		flex-direction: column;
@@ -655,9 +673,11 @@ $bl: #242424;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 100px;
+
 	.form-group {
-		margin-bottom:15px;
+		margin-bottom: 15px;
 	}
+
 	button {
 		min-width: 200px;
 		max-width: max-content;
@@ -667,11 +687,12 @@ $bl: #242424;
 		align-items: center;
 		border: 1px solid #242424;
 
-		&.btn-next {			
+		&.btn-next {
 			color: #fff;
 			background-color: #242424;
 		}
-		&.btn-prev {			
+
+		&.btn-prev {
 			color: #242424;
 			background-color: #fff;
 			margin-bottom: 15px;
