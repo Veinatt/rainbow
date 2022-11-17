@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-3 profile-links">
                     <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
-                    <button  class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
+                    <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
                     <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
                     <button class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
                 </div>
@@ -24,8 +24,11 @@
                             <div
                                 class="col-5 d-flex flex-column align-items-end justify-content-center profile_change_photo">
                                 <div class="upload">
-                                    <button onclick="document.getElementById('file').click();" class="cng-btn cng-btn-photo">Изменить фото</button>
-                                    <input type="file" style="display:none;" accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image" required='required'/>
+                                    <button onclick="document.getElementById('file').click();"
+                                        class="cng-btn cng-btn-photo">Изменить фото</button>
+                                    <input type="file" style="display:none;"
+                                        accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image"
+                                        required='required' />
                                 </div>
                                 <button class="cng-btn">Выйти</button>
                             </div>
@@ -458,4 +461,7 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.getElementById("defaultOpen").click();
+    });
 </script>

@@ -699,3 +699,25 @@ $bl: #242424;
 		}
 	}
 }
+
+.how_work_content {
+	display: none;
+}
+
+.video_btn.active {
+	background: #242424;
+	color: #fff;
+}
+
+.video_btn {
+	background: #fff;
+	color: #242424;
+}
+
+.how_work_buttons button {
+	margin-top: 0;
+	min-width: 298px;
+	background: 0 0;
+	color: #242424;
+	border: 1px solid #242424;
+}
