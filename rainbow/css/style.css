@@ -355,6 +355,11 @@ body {
   text-align: center;
   font-weight: lighter;
   font-size: 16px;
+  color: #242424 !important;
+}
+
+.item-list .item .item_name:hover {
+  text-decoration: underline !important;
 }
 
 .item-list .item .item_price {
@@ -456,7 +461,6 @@ body {
 }
 
 .add-prod-form .top-cont .tt-cont .img-cont img {
-  display: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -724,6 +728,162 @@ body {
   background: 0 0;
   color: #242424;
   border: 1px solid #242424;
+}
+
+#saleModal .sale-title {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 30px 0;
+  font-family: Palatino;
+  font-size: 36px;
+  color: #242424;
+}
+
+#saleModal .modal-body {
+  padding: 0;
+}
+
+#saleModal .item {
+  width: 282px;
+  background-color: #f8f8f8;
+  color: #242424 !important;
+  border: 1px solid #efefef;
+  font-family: "Nunito";
+}
+
+#saleModal .item img {
+  width: 100%;
+  aspect-ratio: 282/346;
+}
+
+#saleModal .item .item-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#saleModal .item .item_articul {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+#saleModal .item .item_name {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #242424 !important;
+}
+
+#saleModal .item .item_name:hover {
+  text-decoration: underline !important;
+}
+
+#saleModal .item .item_price {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+#saleModal .item .add-sale {
+  min-width: 200px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #242424;
+  color: #242424;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+#saleModal .item .add-sale:hover {
+  color: #fff;
+  background-color: #242424;
+}
+
+#saleModal .item .prod-add-cont {
+  width: 100%;
+  aspect-ratio: 282/346;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#saleModal .item .prod-add-text {
+  color: #242424;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#saleModal .item:hover .prod-add-text {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#saleModal .modal-form {
+  margin: 0;
+  max-width: 100%;
+}
+
+#saleModal .modal-form .salee-title {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0 20px 0;
+  font-family: Palatino;
+  font-size: 36px;
+  color: #242424;
+}
+
+#saleModal .modal-form .form-submit button {
+  margin: 15px auto 40px auto;
+}
+
+#saleModal .modal-form .select-sale span {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #242424;
+  color: #242424;
+  text-align: center;
+  cursor: pointer;
+}
+
+#saleModal .modal-form .sale-row {
+  display: flex;
+  justify-content: center;
+}
+
+#saleModal .modal-form .sale-row label:not(:last-child) span {
+  border-right: none;
+}
+
+#saleModal .modal-form .sale-row:last-child span {
+  border-top: none;
+}
+
+#saleModal .modal-form input:checked ~ span {
+  border: 1px solid #242424;
+  background-color: #242424;
+  color: #fff;
+}
+
+#saleModal .modal-form .select-sale label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 1366px) {
