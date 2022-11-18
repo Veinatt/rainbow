@@ -422,10 +422,17 @@ body {
   margin-top: 10px;
 }
 
+.add-prod-form .form-textarea {
+  flex-grow: 1;
+  max-height: 311px;
+  display: flex;
+  flex-direction: column;
+}
+
 .add-prod-form textarea {
   resize: none;
-  max-height: 119px;
-  height: 119px;
+  flex-grow: 1;
+  max-height: none;
 }
 
 .add-prod-form .rnb-sub-title {
@@ -442,22 +449,30 @@ body {
 
 .add-prod-form .top-cont .tt-cont {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.add-prod-form .top-cont .tt-cont.img-add-contt {
+.add-prod-form .top-cont .tt-cont:last-child {
+  justify-content: space-between;
+}
+
+.add-prod-form .top-cont .tt-cont .img-add-contt {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .add-prod-form .top-cont .tt-cont .img-cont {
-  width: 236px;
+  width: calc((100% - 40px) / 3);
   aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-prod-form .top-cont .tt-cont .img-cont:not(:nth-child(3n)) {
+  margin-right: 20px;
 }
 
 .add-prod-form .top-cont .tt-cont .img-cont img {
@@ -884,6 +899,111 @@ body {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+}
+
+.sizes {
+  max-width: 493px;
+  width: 100%;
+  /* Customize the label (the container) */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.sizes .size-row {
+  display: flex;
+  width: 100%;
+}
+
+.sizes .size-row:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sizes .size-row .size-block {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.sizes .size-row .size-block:first-child {
+  width: 10em;
+}
+
+.sizes .size-row .size-block:last-child {
+  flex-grow: 1;
+}
+
+.sizes .size-row .size-block .size-label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #646464;
+}
+
+.sizes .size-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+  height: 100%;
+  margin-top: 0;
+  padding: 15px;
+  padding-left: 35px;
+}
+
+.sizes .size-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.sizes .size-check .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizes .size-check input:checked ~ .checkmark {
+  background-color: #242424;
+  border: 1px solid #242424;
+}
+
+.sizes .size-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sizes .size-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 @media (max-width: 1366px) {
