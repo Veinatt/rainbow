@@ -769,6 +769,8 @@ body {
 #saleModal .item img {
   width: 100%;
   aspect-ratio: 282/346;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #saleModal .item .item-border {

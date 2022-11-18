@@ -763,7 +763,8 @@ $bl: #242424;
 
 		img {
 			width: 100%;
-			aspect-ratio: 282 / 346
+			aspect-ratio: 282 / 346;
+			object-fit: cover;
 		}
 
 		border: 1px solid #efefef;
