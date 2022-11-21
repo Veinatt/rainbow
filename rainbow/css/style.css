@@ -337,6 +337,8 @@ body {
 .item-list .item img {
   width: 100%;
   aspect-ratio: 282/346;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .item-list .item .item-border {
@@ -412,6 +414,48 @@ body {
 .item-list .item:hover .prod-add-text {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.catalog.items .item {
+  max-width: 302px;
+  background-color: #fff;
+  color: #242424 !important;
+  border: 1px solid #efefef;
+  font-family: "Nunito";
+}
+
+.catalog.items .item img {
+  width: 100%;
+  aspect-ratio: 302/346;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog.items .item .item-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog.items .item .item_old_price {
+  margin-bottom: 10px;
+}
+
+.catalog.items .item .item_articul {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+.catalog.items .item .item_name {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #242424 !important;
+}
+
+.catalog.items .item .item_name:hover {
+  text-decoration: underline !important;
 }
 
 .add-prod-form {
