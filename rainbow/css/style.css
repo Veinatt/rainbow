@@ -431,10 +431,15 @@ body {
      object-fit: cover;
 }
 
+.catalog.items .item:not(:last-child) {
+  border-right: none;
+}
+
 .catalog.items .item .item-border {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none !important;
 }
 
 .catalog.items .item .item_old_price {

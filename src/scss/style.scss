@@ -422,11 +422,15 @@ $bl: #242424;
 
 		border: 1px solid #efefef;
 		font-family: 'Nunito';
-
+		&:not(:last-child) {
+			border-right: none;
+		}
+		
 		.item-border {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			border:none !important;
 		}
 		.item_old_price {
 			margin-bottom:10px
