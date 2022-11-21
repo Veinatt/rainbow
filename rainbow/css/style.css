@@ -1008,6 +1008,42 @@ body {
   transform: rotate(45deg);
 }
 
+#prodModal .modal-dialog {
+  max-width: none;
+  height: auto;
+  margin: 0;
+  width: 100vw;
+}
+
+#prodModal .modal-dialog .modal-content {
+  padding: 100px;
+}
+
+#prodModal form {
+  margin-top: 40px;
+  display: flex;
+}
+
+#prodModal form button {
+  max-width: 464px;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #242424;
+  color: #FFFFFF;
+  font-family: "Nunito";
+  font-size: 30px;
+}
+
+#prodModal form button:first-child {
+  background: #1CCC38;
+  margin-right: 16px;
+}
+
+#prodModal form button:last-child {
+  background: #D01919;
+}
+
 @media (max-width: 1366px) {
   .add-prod-form .slct .dropdownn .select > svg {
     width: 25px;

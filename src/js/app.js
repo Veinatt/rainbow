@@ -18,8 +18,10 @@ function ready(fn) {
     }
 }
 
+$(document).ready(function ($) {
 
-
+    $('#prodModal').modal('show');
+});
 
 if (document.querySelector('#to_signin')) {
     document.querySelector('#to_signin').addEventListener('click', function () {
@@ -33,7 +35,7 @@ if (document.querySelector('#to_signup')) {
         document.querySelector('.modal-signin').classList.remove('active');
     }, false);
 }
-if(document.querySelector('#defaultOpen')) {
+if (document.querySelector('#defaultOpen')) {
     document.getElementById("defaultOpen").click();
 }
 
