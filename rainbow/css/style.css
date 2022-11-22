@@ -416,6 +416,78 @@ body {
   text-underline-offset: 3px;
 }
 
+.search-title {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "Palantino";
+  font-size: 36px;
+  color: #626262;
+}
+
+.search-title span {
+  color: #000000;
+}
+
+.search-sell {
+  padding-bottom: 100px;
+}
+
+.search-cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-cont .sell-card {
+  display: flex;
+  width: calc((100% - 100px) / 3);
+  background: #f8f8f8;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 50px;
+}
+
+.search-cont .sell-card:not(:nth-child(3n)) {
+  margin-right: 50px;
+}
+
+.search-cont .sell-card .sell-right {
+  margin-left: 30px;
+}
+
+.search-cont .sell-card .sell-name {
+  font-family: "Palantino";
+  font-size: 36px;
+  color: #000000;
+}
+
+.search-cont .sell-card .sell-reg {
+  font-family: "Nunito";
+  font-weight: lighter;
+  color: #646464;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.search-cont .sell-card .sell-count {
+  font-family: "Nunito";
+  font-weight: lighter;
+  color: #000;
+  font-size: 16px;
+}
+
+.search-cont .sell-card .sell-count span {
+  font-weight: bolder;
+}
+
+.search-cont .sell-card img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
 .catalog.items .item {
   max-width: 302px;
   background-color: #fff;
