@@ -1165,6 +1165,236 @@ body {
   background: #D01919;
 }
 
+.product_images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 50px;
+}
+
+.product_images .product_image {
+  width: calc((100% - 16px) / 2);
+  aspect-ratio: 1/1;
+  max-width: none;
+  margin-right: 0;
+}
+
+.product_images .product_image:not(:nth-child(2n)) {
+  margin-right: 16px;
+}
+
+.product_images .product_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product_sizes .label {
+  font-family: "Nunito";
+  font-weight: 600;
+  color: #242424;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product_sizes .select-size span {
+  width: 57px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EFEFEF;
+  color: #242424;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.product_sizes input:checked ~ span {
+  border: 1px solid #242424;
+  background-color: #242424;
+  color: #fff;
+}
+
+.product_sizes .select-size label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product_sizes input:checked ~ span {
+  border: none;
+}
+
+.product_sizes .product_cart {
+  margin-top: 25px;
+}
+
+.cart-page {
+  margin-bottom: 50px;
+}
+
+.cart-page .cart-hid {
+  display: none !important;
+}
+
+.cart-page .cart-cont-empty {
+  padding: 15em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-page .cart-cont-empty .center-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-page .cart-cont-empty .center-cont .title {
+  font-family: "Palantino";
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.cart-page .cart-cont-empty .center-cont a {
+  width: 100%;
+  max-width: 298px;
+  text-align: center;
+  padding: 14px 0;
+  font-family: "Nunito";
+  font-size: 16px;
+  color: #fff;
+  background-color: #242424;
+}
+
+.cart-page .cart-cont-main .cart-contt {
+  display: flex;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-inputs .form-group {
+  margin-bottom: 10px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww.f-roww {
+  margin-bottom: 20px;
+  font-family: "Nunito";
+  color: #b6b6b6;
+  font-size: 16px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-prod {
+  display: flex;
+  align-items: center;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: lighter;
+  color: #242424;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-prod img {
+  width: 128px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-prod .title {
+  margin-right: 100px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-prod:hover .title {
+  text-decoration: underline;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count {
+  display: flex;
+  align-items: center;
+  font-family: "Nunito";
+  color: #242424;
+  font-size: 16px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count span {
+  margin-right: 20px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters div {
+  height: 33px;
+  aspect-ratio: 1/1;
+  color: #242424;
+  border: 1px solid #242424;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters div:hover {
+  background-color: #242424;
+  color: #fff;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters .c-minus {
+  margin-top: 10px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-price .remove {
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-total .title {
+  font-family: "Palantino";
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-total .prod-price {
+  font-family: "Nunito";
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-total .total-price {
+  font-family: "Nunito";
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-total button {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 14px 0;
+  font-family: "Nunito";
+  font-size: 16px;
+  color: #fff;
+  background-color: #242424;
+}
+
 @media (max-width: 1366px) {
   .add-prod-form .slct .dropdownn .select > svg {
     width: 25px;
