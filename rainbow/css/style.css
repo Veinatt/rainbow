@@ -1322,8 +1322,9 @@ body {
   font-size: 16px;
 }
 
-.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count span {
-  margin-right: 20px;
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count #count {
+  border: none;
+  margin-right: 10px;
 }
 
 .cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters {
@@ -1331,7 +1332,16 @@ body {
   flex-direction: column;
 }
 
-.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters div {
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters .c-minus,
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters .c-plus {
   height: 33px;
   aspect-ratio: 1/1;
   color: #242424;
@@ -1345,7 +1355,8 @@ body {
   cursor: pointer;
 }
 
-.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters div:hover {
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters .c-minus:hover,
+.cart-page .cart-cont-main .cart-contt .cart-prods .roww .cart-prods-count .counters .c-plus:hover {
   background-color: #242424;
   color: #fff;
 }

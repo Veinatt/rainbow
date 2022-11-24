@@ -1335,15 +1335,22 @@ $bl: #242424;
 						color: #242424;
 						font-size: 16px;
 
-						span {
-							margin-right: 20px
+						#count {
+							border: none;
+							margin-right: 10px
 						}
 
 						.counters {
 							display: flex;
 							flex-direction: column;
-
-							div {
+							input {
+								position: absolute;
+								opacity: 0;
+								cursor: pointer;
+								height: 0;
+								width: 0;
+							}
+							.c-minus,.c-plus {
 								height: 33px;
 								aspect-ratio: 1/1;
 								color: #242424;
