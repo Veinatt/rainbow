@@ -845,14 +845,14 @@ $bl: #242424;
 	display: none;
 }
 
-.video_btn.active {
-	background: #242424;
-	color: #fff;
+.video-btn.active {
+	background: #242424 !important;
+	color: #fff !important;
 }
 
-.video_btn {
-	background: #fff;
-	color: #242424;
+.video-btn {
+	background: #fff !important;
+	color: #242424 !important;
 }
 
 .how_work_buttons button {
@@ -1247,7 +1247,8 @@ $bl: #242424;
 }
 
 .cart-page {
-	margin-bottom:50px;
+	margin-bottom: 50px;
+
 	.cart-hid {
 		display: none !important;
 	}
@@ -1284,11 +1285,13 @@ $bl: #242424;
 	.cart-cont-main {
 		.cart-contt {
 			display: flex;
+
 			.cart-inputs {
 				.form-group {
 					margin-bottom: 10px
 				}
 			}
+
 			.cart-prods {
 				.roww {
 					display: flex;
@@ -1321,9 +1324,10 @@ $bl: #242424;
 						.title {
 							margin-right: 100px
 						}
+
 						&:hover {
 							.title {
-								text-decoration:underline
+								text-decoration: underline
 							}
 						}
 					}
@@ -1343,6 +1347,7 @@ $bl: #242424;
 						.counters {
 							display: flex;
 							flex-direction: column;
+
 							input {
 								position: absolute;
 								opacity: 0;
@@ -1350,7 +1355,9 @@ $bl: #242424;
 								height: 0;
 								width: 0;
 							}
-							.c-minus,.c-plus {
+
+							.c-minus,
+							.c-plus {
 								height: 33px;
 								aspect-ratio: 1/1;
 								color: #242424;
@@ -1383,7 +1390,7 @@ $bl: #242424;
 
 						.remove {
 							margin-right: 100px;
-							cursor:pointer;
+							cursor: pointer;
 						}
 					}
 				}
@@ -1395,12 +1402,14 @@ $bl: #242424;
 					font-size: 36px;
 					margin-bottom: 25px;
 				}
+
 				.prod-price {
 					font-family: "Nunito";
 					font-size: 16px;
 					margin-bottom: 10px;
-					display:flex
+					display: flex
 				}
+
 				.total-price {
 					font-family: "Nunito";
 					font-size: 16px;
@@ -1408,16 +1417,79 @@ $bl: #242424;
 				}
 
 				button {
-						width: 100%;
-						max-width: 200px;
-						text-align: center;
-						padding: 14px 0;
-						font-family: "Nunito";
-						font-size: 16px;
-						color: #fff;
-						background-color: #242424;
+					width: 100%;
+					max-width: 200px;
+					text-align: center;
+					padding: 14px 0;
+					font-family: "Nunito";
+					font-size: 16px;
+					color: #fff;
+					background-color: #242424;
 				}
 			}
 		}
 	}
+}
+
+.abt-title {
+	padding: 50px 0 75px 0 !important
+}
+
+.reasons-title {
+	margin-bottom: 70px !important
+}
+
+.section-who-partner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-who-partner_desc {
+	max-width: 830px !important;
+
+	p:first-child {
+		max-width: 575px !important;
+	}
+}
+
+.accordion-item:first-of-type {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+
+}
+
+.accordion-item {
+	background: none !important;
+	background-color: transparent !important;
+
+	div,
+	button {
+		background: inherit !important;
+		background-color: inherit !important;
+	}
+
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-right: none;
+	border-left: none;
+}
+
+.accordion-button {
+	cursor: pointer;
+	font-family: "Palatino";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 43px;
+	color: #242424 !important;
+}
+
+.accordion-button::after {
+	background-position: center;
+	background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='12' width='28' height='4' fill='%23242424'/%3E%3Crect x='12' y='28' width='28' height='4' transform='rotate(-90 12 28)' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+	transform: none !important;
+	background-image: url("data:image/svg+xml,%3Csvg width='28' height='4' viewBox='0 0 28 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='28' height='4' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
 }
