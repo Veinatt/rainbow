@@ -844,6 +844,25 @@ body {
   margin-bottom: 15px;
 }
 
+.sub-mit {
+  max-width: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #242424;
+  color: #242424;
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  margin-left: 10px;
+}
+
 .how_work_content {
   display: none;
 }
