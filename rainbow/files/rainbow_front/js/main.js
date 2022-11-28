@@ -196,8 +196,16 @@ $(document).ready(function () {
     menu.addEventListener('click', function (){
         if (bg){
             document.getElementsByClassName('mobile')[0].style.backgroundColor = ""
+            document.getElementsByClassName('mobile')[0].querySelectorAll('path').forEach(path => {
+                path.style.fill = ''
+                path.style.stroke = ''
+            })
         } else {
             document.getElementsByClassName('mobile')[0].style.backgroundColor = "transparent"
+            document.getElementsByClassName('mobile')[0].querySelectorAll('path').forEach(path => {
+                path.style.fill = '#fff'
+                path.style.stroke = '#fff'
+            })
         }
         menuShow.classList.toggle('active')
         bg = !bg

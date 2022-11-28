@@ -20,13 +20,96 @@ body {
 
 $bl: #242424;
 
-.logo {
-	width: 100%
+header.mobile.background svg path {
+	fill: #fff;
+	stroke: #fff;
+	transition: .3s all
 }
 
-.logo img {
+.logo {
 	width: 100%;
-	object-fit: contain;
+	display: flex;
+	justify-content: center
+}
+
+.logo svg {
+	width: 100%;
+	aspect-ratio: 2133 / 635;
+
+	@media(max-width:1024px) {
+		height: 70px;
+		width: auto
+	}
+}
+
+.section_title.bordered:before,
+.section_title.bordered:after {
+	width: calc((100vw - 257px - 280px) / 2);
+
+	@media (max-width:1366px) {
+		width: calc((100vw - 257px - 200px) / 2);
+	}
+}
+
+.faq .section_title.bordered:before,
+.faq .section_title.bordered:after {
+	width: calc((100vw - 456px - 280px) / 2);
+
+	@media (max-width:1366px) {
+		width: calc((100vw - 456px - 200px) / 2);
+	}
+}
+
+.section_title.bordered:before {
+	@media(min-width:1600px) {
+		left: calc((100vw - 1550px) / -2);
+	}
+
+	@media(min-width:1366px) {
+		left: calc((100vw - 1320px) / -2);
+	}
+
+	@media(min-width:1200px) {
+		left: calc((100vw - 1140px) / -2);
+	}
+
+	@media(min-width:992px) {
+		left: calc((100vw - 960px) / -2);
+	}
+
+	@media(min-width:768px) {
+		left: calc((100vw - 720px) / -2);
+	}
+
+	@media(min-width:576px) {
+		left: calc((100vw - 540px) / -2);
+	}
+}
+
+.section_title.bordered:after {
+	@media(min-width:1600px) {
+		right: calc((100vw - 1550px) / -2);
+	}
+
+	@media(min-width:1366px) {
+		right: calc((100vw - 1320px) / -2);
+	}
+
+	@media(min-width:1200px) {
+		right: calc((100vw - 1140px) / -2);
+	}
+
+	@media(min-width:992px) {
+		right: calc((100vw - 960px) / -2);
+	}
+
+	@media(min-width:768px) {
+		right: calc((100vw - 720px) / -2);
+	}
+
+	@media(min-width:576px) {
+		right: calc((100vw - 540px) / -2);
+	}
 }
 
 .rnb-title {
@@ -93,34 +176,35 @@ $bl: #242424;
 	background-color: transparent !important;
 }
 
-$container-max-widths: (sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1140px,
-	xxl: 1320px);
 
 .container {
 
 	@media(min-width:1600px) {
-		max-width:1550px;
+		max-width: 1550px;
 	}
+
 	@media(min-width:1366px) {
-		max-width:1320px
+		max-width: 1320px
 	}
+
 	@media(min-width:1200px) {
-		max-width:1140px
+		max-width: 1140px
 	}
+
 	@media(min-width:1200px) {
-		max-width:1180px
+		max-width: 1180px
 	}
+
 	@media(min-width:992px) {
-		max-width:960px
+		max-width: 960px
 	}
+
 	@media(min-width:768px) {
-		max-width:720px
+		max-width: 720px
 	}
+
 	@media(min-width:576px) {
-		max-width:540px
+		max-width: 540px
 	}
 }
 
@@ -218,8 +302,10 @@ $container-max-widths: (sm: 540px,
 
 .profile_forms .form-group {
 	margin-bottom: 10px;
+
 	@media(max-width:1600px) {
 		width: calc((100% - 40px) / 2);
+
 		&.profile_forms-save {
 			margin-left: 0
 		}
@@ -344,23 +430,34 @@ $container-max-widths: (sm: 540px,
 	left: 0;
 	content: "";
 }
+
 .save_first {
 	margin-left: 20px !important;
 }
-header .logo {
-	img {
-		visibility:hidden
+
+.section-who-partner_desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.care_block {
+	.section-who-partner_desc {
+		display: block;
 	}
 }
+
 .header-navs {
 	.btn-sale {
-		display:inline-block;
-		white-space:nowrap;
+		display: inline-block;
+		white-space: nowrap;
+
 		@media(max-width:1199px) {
-			margin-right:20px;
+			margin-right: 20px;
 		}
 	}
 }
+
 .item-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -373,6 +470,7 @@ header .logo {
 		color: $bl !important;
 		display: flex;
 		flex-direction: column;
+
 		img {
 			width: 100%;
 			aspect-ratio: 282 / 346;
@@ -401,6 +499,7 @@ header .logo {
 			font-size: 16px;
 			color: #242424 !important;
 			flex-grow: 1;
+
 			&:hover {
 				text-decoration: underline !important
 			}
@@ -1567,40 +1666,55 @@ header .logo {
 
 .footer {
 	.row {
-		height:auto !important;
+		height: auto !important;
+
 		.before-line {
 			padding: 0 50px;
+
 			@media(max-width:1600px) {
 				padding: 0 30px
 			}
+
 			@media(max-width:1365px) {
 				padding: 0 10px
 			}
+
 			&:first-child {
-				padding-left:0;
+				padding-left: 0;
 			}
+
 			&::after {
-				right:0;
+				right: 0;
 				height: 100%;
 				top: 0
 			}
-			a,div {
-				margin-left:0;
-				margin-right:0;
+
+			a,
+			div {
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
+
 		form {
-			padding-left:50px;
+			padding-left: 50px;
+
 			@media(max-width:1600px) {
 				padding-left: 30px
 			}
+
 			@media(max-width:1365px) {
 				padding-left: 10px
 			}
-			a,div,button,p {
-				margin-left:0;
-				margin-right:0;
+
+			a,
+			div,
+			button,
+			p {
+				margin-left: 0;
+				margin-right: 0;
 			}
+
 			.custom-radio:first-child {
 				span {
 					padding-left: 0

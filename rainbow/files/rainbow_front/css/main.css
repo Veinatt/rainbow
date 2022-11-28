@@ -1645,6 +1645,7 @@ label.custom-radio span:before {
     background-color: rgba(0, 0, 0, 0.69);
     transition: 0.3s all;
   }
+  
 
   .mobile-fixed {
     display: flex;
