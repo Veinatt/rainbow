@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221125220126" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221127134311" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap&_v=20221125220126"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap&_v=20221127134311"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221125220126" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221127134311" />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20221125220126" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20221125220126">
-    <link rel="stylesheet" href="files/rainbow_front/css/main.css?_v=20221125220126">
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20221127134311" />
+    <link rel="stylesheet" href="files/rainbow_front/css/main.css?_v=20221127134311">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221127134311">
     <title></title>
 </head>
 
@@ -364,446 +364,342 @@
         </div>
     </div>
 </div>
-    <main>
-    <div class="profile-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 profile-links">
-                    <button class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
-                    <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
-                    <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
-                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
+    <div id="app">
+    <div>
+        <main>
+            <div class="container">
+                <div class="how_work_wrapper abt-title">
+                    <div class="how_work_title">Для клиентов</div>
                 </div>
-                <div class="col-md-9 pl-0">
-                    <div class="profile-wrapper">
-                        <div class="row">
-                            <div class="col-md-7 d-md-flex">
-                                <div class="profile_image">
-                                    <picture><source srcset="img/profile_image.webp" type="image/webp"><img src="img/profile_image.png" alt=""></picture>
-                                </div>
-                                <div class="profile_info">
-                                    <div class="profile-user_name">Кирилл Дейкун</div>
-                                    <div class="profile-user_withASS">Вы с нами с марта 2022</div>
-                                    <div class="profile-user_items">Ваши товары: <b>36</b></div>
-                                </div>
-                            </div>
-                            <div
-                                class="col-5 d-flex flex-column align-items-end justify-content-center profile_change_photo">
-                                <div class="upload">
-                                    <button onclick="document.getElementById('file').click();"
-                                        class="cng-btn cng-btn-photo">Изменить фото</button>
-                                    <input type="file" style="display:none;"
-                                        accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image"
-                                        required='required' />
-                                </div>
-                                <button class="cng-btn">Выйти</button>
+            </div>
+            <div class="bg_for_users">
+                <div class="container">
+                    <div class="for_users-wrapper">
+                        <div class="for_users-title">О проекте</div>
+                        <div class="for_users-desc">
+                            <p>Rainbow - это один из самых уютных бутиков брендовых вещей. У нас вы найдете модную
+                                одежду, всемирные бренды и даже обувь, аксессуары от самых популярных домов моды. На
+                                нашем сайте вы сможете собрать свой идеальный образ, купить винтажные вещи класса люкс и
+                                не только.</p>
+                            <p>Навигация на нашем сайте устроена удобным образом, чтобы вы могли не задумываясь выбирать
+                                нужные вам вещи, и даже погрузиться в мир шопинга Милана или Парижа. И даже не нужно
+                                куда-то ехать! Все у вас под рукой в уюте вашего дома.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-why-buy">
+                <div class="container">
+                    <div class="section-title for_users-title reasons-title">Причины покупать в RAINBOW</div>
+                    <div class="row ">
+                        <div class="col-2 col-md-1 d-flex align-items-md-center align-items-start"><svg width="77"
+                                height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="77" height="77" fill="white"></rect>
+                                <path
+                                    d="M38.72 3L27.0606 26.6263L1 30.3931L19.86 48.7919L15.4013 74.75L38.72 62.5012L62.0388 74.75L57.58 48.7919L76.44 30.4187L50.3794 26.6263L38.72 3Z"
+                                    fill="#252525"></path>
+                            </svg></div>
+                        <div class="col-10 col-md-7 br-top">
+                            <div class="section-title"><b>Гарантия подлинности.</b></div>
+                            <div class="section-sub">Мы против подделок и обмана людей, поэтому каждая вещь, которая
+                                есть у нас на сайте проходит тщательную и щепетильную проверку на качество и
+                                оригинальность.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-md-1  d-flex align-items-md-center align-items-start"><svg width="77"
+                                height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="77" height="77" fill="white"></rect>
+                                <path
+                                    d="M7 11C5.14348 11 3.36301 11.7375 2.05025 13.0503C0.737498 14.363 0 16.1435 0 18V56.5H7C7 59.2848 8.10625 61.9555 10.0754 63.9246C12.0445 65.8938 14.7152 67 17.5 67C20.2848 67 22.9555 65.8938 24.9246 63.9246C26.8938 61.9555 28 59.2848 28 56.5H49C49 59.2848 50.1062 61.9555 52.0754 63.9246C54.0445 65.8938 56.7152 67 59.5 67C62.2848 67 64.9555 65.8938 66.9246 63.9246C68.8938 61.9555 70 59.2848 70 56.5H77V39L66.5 25H56V11H7ZM31.5 18L45.5 32L31.5 46V35.5H10.5V28.5H31.5V18ZM56 30.25H64.75L71.645 39H56V30.25ZM17.5 51.25C18.8924 51.25 20.2277 51.8031 21.2123 52.7877C22.1969 53.7723 22.75 55.1076 22.75 56.5C22.75 57.8924 22.1969 59.2277 21.2123 60.2123C20.2277 61.1969 18.8924 61.75 17.5 61.75C16.1076 61.75 14.7723 61.1969 13.7877 60.2123C12.8031 59.2277 12.25 57.8924 12.25 56.5C12.25 55.1076 12.8031 53.7723 13.7877 52.7877C14.7723 51.8031 16.1076 51.25 17.5 51.25ZM59.5 51.25C60.8924 51.25 62.2277 51.8031 63.2123 52.7877C64.1969 53.7723 64.75 55.1076 64.75 56.5C64.75 57.8924 64.1969 59.2277 63.2123 60.2123C62.2277 61.1969 60.8924 61.75 59.5 61.75C58.1076 61.75 56.7723 61.1969 55.7877 60.2123C54.8031 59.2277 54.25 57.8924 54.25 56.5C54.25 55.1076 54.8031 53.7723 55.7877 52.7877C56.7723 51.8031 58.1076 51.25 59.5 51.25Z"
+                                    fill="#252525"></path>
+                            </svg></div>
+                        <div class="col-10 col-md-7">
+                            <div class="section-title"><b>Быстрая доставка</b></div>
+                            <div class="section-sub">На всем диком западе шопинга и маркетплейсов! <br> Заказывая вещи у
+                                нас, вы не будете долго ждать, у вас не будет переживания за то, что<br> ваш товар
+                                задержат на месяца. Мы позаботимся о том, чтобы вы получили заказ в самые
+                                кратчайшие<br>сроки, независимо в какой части России вы живете и что это за город.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-md-1  d-flex align-items-md-center align-items-start"><svg width="77"
+                                height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="77" height="77" fill="white"></rect>
+                                <path
+                                    d="M68.1264 8.19565C67.9437 7.74051 67.5925 7.37335 67.1459 7.17055C66.6994 6.96775 66.1918 6.94492 65.7288 7.10682C65.2659 7.26872 64.8831 7.60287 64.6603 8.03977C64.4374 8.47666 64.3916 8.98266 64.5323 9.4525C67.4586 17.863 61.65 24.1441 57.2211 27.5083L55.4319 24.9442C54.8303 24.0843 53.4852 23.3692 52.4394 23.3566L42.3972 23.4007C41.1705 23.4377 39.9766 23.8056 38.9417 24.4654L9.35058 45.2144C8.66229 45.6988 8.19396 46.4362 8.04813 47.2651C7.90231 48.094 8.09087 48.9469 8.57253 49.637L22.0199 68.8772C23.0279 70.3105 24.6375 70.1372 26.0739 69.1355L55.665 48.3833C56.5155 47.7817 57.4983 46.4839 57.8448 45.4916L60.9885 35.5849C61.335 34.5958 61.124 33.087 60.5223 32.227L59.4324 30.6646C65.3796 26.1066 71.5536 18.052 68.1264 8.19565ZM54.3578 37.6733C53.8126 38.0549 53.1977 38.3254 52.548 38.4692C51.8983 38.613 51.2266 38.6275 50.5713 38.5116C49.9161 38.3958 49.29 38.1519 48.729 37.7941C48.168 37.4362 47.683 36.9713 47.3018 36.4259C46.5298 35.3224 46.2272 33.9576 46.4605 32.6311C46.6938 31.3047 47.4438 30.125 48.546 29.351C49.4101 28.7457 50.4417 28.4254 51.4967 28.435C52.5517 28.4446 53.5773 28.7836 54.4302 29.4046C53.5734 29.9212 52.9844 30.2236 52.8741 30.2708C52.4837 30.457 52.168 30.7703 51.9789 31.1594C51.7898 31.5484 51.7384 31.9902 51.8332 32.4123C51.928 32.8344 52.1634 33.2117 52.5007 33.4825C52.8381 33.7533 53.2574 33.9015 53.69 33.9028C53.9609 33.9028 54.2381 33.8398 54.4995 33.7169C55.1106 33.4271 55.7658 33.0838 56.4494 32.6774C56.6066 33.6226 56.4937 34.593 56.1237 35.4769C55.7536 36.3607 55.1415 37.1221 54.3578 37.6733Z"
+                                    fill="#252525"></path>
+                            </svg></div>
+                        <div class="col-10 col-md-7">
+                            <div class="section-title"><b>Низкие цены.</b></div>
+                            <div class="section-sub">Низкие цены. В нашем магазине вы можете купить брендовую и
+                                качественную одежду со скидкой до 85%. И никто даже не поймет, что вы создали гардероб
+                                мечты за небольшие деньги.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="section-who-partner">
+                            <div class="section-who-partner_title">С кем мы сотрудничаем?</div>
+                            <div class="section-who-partner_desc">
+                                <p>Вещи, которые вы видитекаталоге, поступают к нам как из бутиков, так и от частных
+                                    лиц. Поэтому, если вы давно хотели продать что-то из своего гардероба, свяжитесь с
+                                    нами и мы все расскажем и поможем это реализовать.</p>
+                                <p>Даже если вы никогда не продавали ничего через интернет, а тем более, маркетплейсы,
+                                    не переживайте, с нами это просто, быстро и безопасно. Просто свяжитесь с нами по
+                                    любому удобному способу из контактной информации и задайте всее вопросы, которые вас
+                                    интересуют, а мы вам поможем!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9 pl-0">
-                    <div class="profile_edit-wrapper tabcont" id="tab_profile">
-                        <div class="profile_name-form">
-                            Личная информация
-                            <a href="#" class="change">Изменить пароль</a>
-                        </div>
-                        <form class="profile_forms">
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="user_name">Имя пользователя</label>
-                                <input type="text" class="form-control input" id="user_name" placeholder="Ваше имя"
-                                    name="username" value="Кирилл Дейкун">
-                            </div>
-                            <div class="form-group profile_forms-sex">
-                                <label class="label" for="user_name">Пол</label>
-                                <div class="select-sex">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark">Мужской</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark">Женский</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group profile_forms-email">
-                                <label class="label" for="user_email">E-mail</label>
-                                <input type="email" class="form-control input" id="user_email" placeholder="Ваша почта"
-                                    name="user_email" value="info@idile.ru">
-                            </div>
-                            <div class="form-group profile_forms-birthday">
-                                <label class="label" for="birthday">Дата рождения</label>
-                                <input type="date" class="form-control input" id="birthday" placeholder="Дата рождения"
-                                    name="birthday" value="01.04.2022">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="phone">Телефон</label>
-                                <input type="email" class="form-control input" id="phone"
-                                    placeholder="+7 (888) 555-35-35" name="phone" value="+7 (888) 555-35-35">
-                            </div>
-                            <div class="form-group profile_forms-save">
-                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
-                            </div>
-                        </form>
-                        <div class="profile_name-form">
-                            Мои адреса
-                        </div>
-                        <form class="profile_forms">
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="last_name">Фамилия</label>
-                                <input type="text" class="form-control input" id="last_name" placeholder="Иванов"
-                                    name="last_name">
-                            </div>
-                            <div class="form-group profile_forms-ml20">
-                                <label class="label" for="city">Город</label>
-                                <input type="text" class="form-control input" id="city" placeholder="Москва"
-                                    name="city">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="first_name">Имя</label>
-                                <input type="text" class="form-control input" id="first_name" placeholder="Иван"
-                                    name="first_name">
-                            </div>
-                            <div class="form-group profile_forms-ml20">
-                                <label class="label" for="address">Адрес</label>
-                                <input type="text" class="form-control input" id="address" placeholder="ул, Ленина"
-                                    name="address">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="patronymic">Отчество</label>
-                                <input type="text" class="form-control input" id="patronymic" placeholder="Отчество"
-                                    name="patronymic">
-                            </div>
-                            <div class="form-group profile_forms-house">
-                                <label class="label" for="house">Дом</label>
-                                <input type="text" class="form-control input" id="house" placeholder="12" name="house">
-                            </div>
-                            <div class="form-group profile_forms-house">
-                                <label class="label" for="appart">Квартира</label>
-                                <input type="text" class="form-control input" id="appart" placeholder="2" name="appart">
-                            </div>
-                            <div class="form-group profile_forms-save">
-                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
-                            </div>
-                        </form>
-                        <div class="profile_name-form">
-                            Платежные данные
-                        </div>
-                        <div class="profile_forms-payment">
-                            <p>
-                                Платежные карты и реквизиты, которые <br> вы указали на нашем сайте. Вы сможете
-                                использовать
-                                <br> их для оплаты товаров или получения выплат за продажи
-                            </p>
-                            <div class="profile_forms-cards">
-                                <div class="profile_forms-cards_wrapper">
-                                    <label class="check option" for="payment">
-                                        <input class="check__input" type="checkbox" name="payment" id="payment">
-                                        <span class="check__box"></span>
-                                        <span class="check__box-text"></span>
-                                    </label>
-                                    <div class="custom-wrapper-cards">
-                                        <div class="span">
-                                            <div><b>Реквизиты (Юр.лицо, ИП)</b></div>
-                                            <div class="muted">У вас нет добавленных реквизитов</div>
-                                        </div>
-                                        <a href="#">Добавить</a>
-                                    </div>
-                                </div>
-                                <div class="profile_forms-cards_wrapper">
-                                    <label class="check option" for="cards">
-                                        <input class="check__input" type="checkbox" name="payment" id="cards">
-                                        <span class="check__box"></span>
-                                        <span class="check__box-text"></span>
-                                    </label>
-                                    <div class="custom-wrapper-cards">
-                                        <div class="span">
-                                            <div><b>Карта для оплаты</b></div>
-                                            <div class="muted">Дебетовая карта МИР **** **** **** 4567</div>
-                                        </div>
-                                        <a href="#">Удалить</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="care_block">
+                <div class="container">
+                    <div class="section-who-partner_title">Забота о качестве</div>
+                    <div class="section-who-partner_desc">
+                        <p>Мы очень любим брендовые вещи и знаем как за ними ухаживать. Мы очень заботимся о том, чтобы
+                            наши покупатели не разочаровались, совершая покупку на нашем ресурсе.</p>
+                        <p class="mb-0">Заказывая одежду, обувь или аксессуары у нас, вы можете быть полностью уверены,
+                            что вещи будут в отличном состоянии. Помимо всего, мы стараемся подбирать и пускать вещи в
+                            продажу, только самые модные и высокого качества, чтобы вы смогли приобрести не только
+                            качественную вещь, но и собрать свой лучший гарбероб по доступным ценам.</p>
                     </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_favorite">
-                        <div class="fav-stat">
-                            Вам нравится:&nbsp;<span>7</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/his-sec-2.webp" type="image/webp"><img src="img/his-sec-2.jpg" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_orders">
-                        <div class="fav-stat">
-                            Ваши заказы:&nbsp;<span>6</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_products">
-                        <div class="fav-stat">
-                            Ваши товары:&nbsp;<span>0</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цветаааааа
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальтоооооооо демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонноеееееееееее <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Qйййййй</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-13022222222222-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prod-add-cont">
-                                    <svg width="77" height="77" viewBox="0 0 77 77" fill="none"
+                </div>
+            </div>
+            <div class="section section-why-buy">
+                <div class="container for_sales">
+                    <div class="section_title bordered text-center">Для продавцов</div>
+                    <div class="row ">
+                        <div
+                            class="col-2 col-md-1 d-flex align-items-md-center align-items-start justify-content-center">
+                            1</div>
+                        <div class="col-10 col-md-7 br-top">
+                            <div class="section-title"><b>Сдать вещи очень просто!</b></div>
+                            <div class="section-sub">Нужно будет выслать список вещей на наши контактные данные:<p
+                                    class="mt-3"><svg class="mr-3" width="21" height="17" viewBox="0 0 21 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.9 0H2.1C0.945 0 0.0105 0.95625 0.0105 2.125L0 14.875C0 16.0438 0.945 17 2.1 17H18.9C20.055 17 21 16.0438 21 14.875V2.125C21 0.95625 20.055 0 18.9 0ZM18.9 4.25L10.5 9.5625L2.1 4.25V2.125L10.5 7.4375L18.9 2.125V4.25Z"
+                                            fill="#252525"></path>
+                                    </svg>Rainbowresale2020@gmail.com</p>
+                                <p class="mt-2"><svg class="mr-3" width="21" height="21" viewBox="0 0 21 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M0 36.96C0 35.259 1.37896 33.88 3.08 33.88H73.92C75.621 33.88 77 35.259 77 36.96V40.04C77 41.741 75.621 43.12 73.92 43.12H3.08C1.37896 43.12 0 41.741 0 40.04V36.96Z"
-                                            fill="white" />
-                                        <path
-                                            d="M36.96 77C35.259 77 33.88 75.621 33.88 73.92V3.08C33.88 1.37896 35.259 2.08982e-07 36.96 1.34628e-07L40.04 0C41.741 -7.43547e-08 43.12 1.37896 43.12 3.08L43.12 73.92C43.12 75.621 41.741 77 40.04 77H36.96Z"
-                                            fill="white" />
-                                    </svg>
+                                            d="M10.451 2.85833e-05C7.67473 0.0129847 5.01658 1.12495 3.05803 3.09267C1.09949 5.0604 -3.02304e-05 7.72371 6.23381e-10 10.5C6.23386e-10 13.2848 1.10625 15.9555 3.07538 17.9246C5.04451 19.8938 7.71523 21 10.5 21C13.2848 21 15.9555 19.8938 17.9246 17.9246C19.8938 15.9555 21 13.2848 21 10.5C21 7.71524 19.8938 5.04453 17.9246 3.0754C15.9555 1.10627 13.2848 2.85833e-05 10.5 2.85833e-05C10.4837 -9.52778e-06 10.4673 -9.52778e-06 10.451 2.85833e-05ZM14.7928 6.32102C14.8802 6.31927 15.0736 6.34115 15.1996 6.44352C15.2834 6.51623 15.3367 6.61771 15.3492 6.72789C15.3632 6.80927 15.3808 6.99564 15.3668 7.14089C15.2093 8.80164 14.525 12.8301 14.1768 14.6895C14.0297 15.477 13.7401 15.7404 13.4592 15.7658C12.8503 15.8226 12.3874 15.3633 11.7968 14.9765C10.8728 14.3701 10.3504 13.993 9.4535 13.4015C8.41663 12.719 9.08862 12.3428 9.67925 11.7303C9.83413 11.5693 12.5204 9.12539 12.5729 8.90402C12.579 8.87602 12.5851 8.77277 12.5239 8.71852C12.4626 8.66427 12.3716 8.68264 12.306 8.69752C12.2133 8.71852 10.7371 9.69501 7.87763 11.6244C7.45763 11.9131 7.07875 12.0531 6.73838 12.0444C6.36388 12.0374 5.64287 11.8335 5.1065 11.6594C4.4485 11.445 3.92613 11.3321 3.97163 10.969C3.99525 10.78 4.256 10.5866 4.753 10.3889C7.81375 9.05539 9.85425 8.17602 10.8763 7.75164C13.7917 6.53889 14.3981 6.32802 14.7928 6.32102Z"
+                                            fill="#252525"></path>
+                                    </svg>+7 (988) 432-32-32</p>
+                                <p class="mt-4">После наш менеджер свяжется с Вами и проконсультирует вас, <br> если вам
+                                    нужна помощь с ценами, предложит нужных диапозон<br> цен, которые смогут обеспечить
+                                    быструю продажу вашего товара.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div
+                            class="col-2 col-md-1 d-flex align-items-md-center align-items-start justify-content-center">
+                            2</div>
+                        <div class="col-10 col-md-7">
+                            <div class="section-title"><b>Привезти вещи в наш шоу-рум.</b></div>
+                            <div class="section-sub">
+                                <p>по адресу г. Москва Проспекст Вернадского 29 . Бизнес центр <br> "Лето" и заключить
+                                    догово₽</p>
+                                <p>Посмотреть и скачать договор можно <a href="#">здесь</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div
+                            class="col-2 col-md-1 d-flex align-items-md-center align-items-start justify-content-center">
+                            3</div>
+                        <div class="col-10 col-md-7">
+                            <div class="section-title"><b>Ваша первая продажа на нашем маркетплейсе!</b></div>
+                            <div class="section-sub">Как только вещи будут проданы, мы сразу свяжемся с вами!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container faq for_sales">
+                    <div class="section_title bordered text-center">Часто задаваемые вопросы</div>
+                </div>
+                <div class="collapse-block">
+                    <div class="container">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Когда я смогу получить деньги за свои вещи?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Если вы сдали товар к нам в шоурум, то мы принимаем вещи только на условиях реализации, проще говоря, деньги вы получите по факту продажи вещи, выплаты будут происходить на вашу карту.
+                                    </div>
                                 </div>
-                                <div class="prod-add-text">
-                                    Добавить товар
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Если в шоуруме вещи не продались, могу я их забрать?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        В любой момент времени вы сможете забрать вещь в надлежащем виде. За хранение платить ничего не нужно.
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Если вещь долго не продается?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        В этом случае, мы предложим Вам снизить стоимость. И помните, сезонность это не миф! А реальный фактор из-за чего ваша вещь может продаваться дольше.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Принимаете ли вы вещи из других городов России?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Да, мы принимаем вещи из любого города России. В данном случае все расходы по курьеской доставке до Москвы идёт за счет клиента. Свяжитесь с нами по почте Rainbowresale2020@gmail.com или номеру +7 (988) 432-32-32 для уточнения деталей.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Какая наценка на вещи?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Наша наценка на всё разная, все зависит от того, в каком состоянии товар, от бренда, сезонности, популярности. В среднем она составляет от 15% до 50%.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="sc-bdVaJa egXvAD">
+            <div></div>
+        </div>
+        <div class="modal fade" id="login" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header p-0"><button type="button" id="close" class="close" data-dismiss="modal"
+                            aria-label="Close"><svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z"
+                                    fill="#242424"></path>
+                                <path
+                                    d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z"
+                                    fill="#242424"></path>
+                            </svg></button></div>
+                    <div class="modal-body">
+                        <div class="modal-signin active">
+                            <div class="modal-title">Войти</div>
+                            <div class="modal-form">
+                                <form>
+                                    <div class="form-group"><label class="label" for="email">E-mail</label><input
+                                            type="email" class="form-control input" id="email" placeholder="Ваша почта"
+                                            name="email"></div>
+                                    <div class="form-group"><label class="label" for="password">Пароль</label>
+                                        <div class="input-group mb-2"><input type="password"
+                                                class="form-control input pr-5" id="password" placeholder="Ваш пароль"
+                                                name="password">
+                                            <div class="input-group-prepend password-show-hide">
+                                                <div class="input-group-text bg-transparent border-0 eventShowPass"><svg
+                                                        width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z"
+                                                            fill="#646464"></path>
+                                                        <path
+                                                            d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z"
+                                                            fill="#646464"></path>
+                                                        <path
+                                                            d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z"
+                                                            fill="#646464"></path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_footer"><label class="mb-0 check option" for="remember"><input
+                                                class="check__input" type="checkbox" name="remember" id="remember"><span
+                                                class="check__box"></span><span class="check__box-text">Запомнить
+                                                меня</span></label><a href="#" class="filter_reset m-0">Забыли
+                                            пароль?</a></div>
+                                    <div class="form-submit"><button>Войти</button></div>
+                                </form>
+                            </div><button class="text-btn" id="to_signup">Зарегистрироваться</button>
+                        </div>
+                        <div class="modal-signup">
+                            <div class="modal-title">Зарегистрироваться</div>
+                            <div class="modal-form">
+                                <form>
+                                    <div class="form-group"><label class="label" for="name">Ваше имя</label><input
+                                            type="text" class="form-control input" id="name" placeholder="Иван Петров"
+                                            name="name"></div>
+                                    <div class="form-group"><label class="label" for="email">E-mail</label><input
+                                            type="email" class="form-control input" id="email" placeholder="Ваша почта"
+                                            name="email"></div>
+                                    <div class="form-group"><label class="label" for="password">Пароль</label>
+                                        <div class="input-group mb-2"><input type="password"
+                                                class="form-control input pr-5" id="password" placeholder="Ваш пароль"
+                                                name="password">
+                                            <div class="input-group-prepend password-show-hide">
+                                                <div class="input-group-text bg-transparent border-0 eventShowPass"><svg
+                                                        width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z"
+                                                            fill="#646464"></path>
+                                                        <path
+                                                            d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z"
+                                                            fill="#646464"></path>
+                                                        <path
+                                                            d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z"
+                                                            fill="#646464"></path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-submit"><button>Зарегистрироваться</button></div>
+                                </form>
+                            </div><button class="text-btn" id="to_signin">Войти</button>
+                        </div>
+                        <div class="modal-confirm">
+                            <div class="modal-title">Активация аккаунта</div>
+                            <div class="modal-form">
+                                <div>Код выслан на ваш e-mail адрес</div>
+                                <form>
+                                    <div class="form-group"><label class="label" for="code">Код</label><input
+                                            type="text" class="form-control input" id="code" name="code"></div>
+                                    <div class="form-submit"><button>Отправить</button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -811,157 +707,35 @@
             </div>
         </div>
     </div>
-
-    <!--Modal Login-->
-    <div class="modal fade" id="saleModal" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header p-0">
-                    <div class="sale-title">
-                        Добавить скидку к товару:
-                    </div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z"
-                                fill="#242424" />
-                            <path
-                                d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z"
-                                fill="#242424" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-signin active">
-                        
-                        <div class="item">
-                            <div class="item_img">
-                                <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                            </div>
-                            <div class="item-border">
-                                <div class="item_articul">Арт: 9242-13022222222222-IF-Q</div>
-                                <a href="#" class="item_name">
-                                    Пальто демисезонное <br> Драповое бежевого цвета
-                                </a>
-                                <div class="item_price">85 800 р.</div>
-                            </div>
-                        </div>
-                        <div class="modal-form">
-                            <form action="">
-                                <div class="salee-title">
-                                    Какая будет скидка?
-                                </div>
-                                <div class="select-sale">
-                                    <div class="sale-row">
-                                        <label>
-                                            <input type="radio" checked="checked" name="sale">
-                                            <span class="checkmark"><div>0%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>10%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>20%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>30%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>40%</div></span>
-                                        </label>
-                                    </div>
-                                    <div class="sale-row sale-second">
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>50%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>60%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>70%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>80%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>90%</div></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-submit">
-                                    <button>Добавить скидку к товару</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-<script>
-    function openTab(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcont");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    document.addEventListener("DOMContentLoaded", function (event) {
-        document.getElementById("defaultOpen").click();
-    });
-</script>
+</div>
     <footer>
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-2 before-line">
+                <div class="col-6 col-xl-2 before-line">
                     <div class="footer-title">Rainbow</div>
                     <a href="for_users.html">О проекте</a>
                     <a href="garantee.html">Гарантия от Rainbow</a>
                     <a href="#">Как работает сервис</a>
                 </div>
-                <div class="col-6 col-md-2 before-line">
+                <div class="col-6 col-xl-2 before-line">
                     <div class="footer-title">ПОКУПАТЕЛЯМ</div>
                     <a href="#">Как покупать</a>
                     <a href="#">Безопасная сделка</a>
                     <a href="#">Доставка</a>
                 </div>
-                <div class="col-6 col-md-2 before-line">
+                <div class="col-6 col-xl-2 before-line">
                     <div class="footer-title">ПРОДАВЦАМ</div>
                     <a href="#">Как продавать</a>
                     <a href="#">Безопасная сделка</a>
                     <a href="#">Коммиссия</a>
                 </div>
-                <div class="col-6 col-md-3 before-line">
+                <div class="col-6 col-xl-3 before-line">
                     <div class="footer-title">ПОМОЩЬ И ПОДДЕРЖКА</div>
                     <a href="#">Контакты</a>
                     <a href="#">Онлайн поддержка</a>
                 </div>
-                <form action="" class="col-12 col-md-3">
+                <form action="" class="col-12 col-xl-3">
                     <div class="footer-title">ПОДПИСКА</div>
                     <div class="form-group">
                         <label class="sr-only" for="subscribe">E-mail</label>
@@ -1054,16 +828,16 @@
         Профиль
     </a>
 </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221125220126"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221127134311"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?_v=20221125220126"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?_v=20221127134311"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20221125220126"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221125220126"></script>
-    <script src="js/app.min.js?_v=20221125220126"></script>
-    <script src="files/rainbow_front/js/main.js?_v=20221125220126"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20221127134311"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221127134311"></script>
+    <script src="js/app.min.js?_v=20221127134311"></script>
+    <script src="files/rainbow_front/js/main.js?_v=20221127134311"></script>
 </body>
 
 </html>

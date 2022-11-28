@@ -138,6 +138,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background-size: cover;
+  background-position: center;
   font-family: "Nunito";
   color: #fff !important;
   font-size: 18px;
@@ -215,7 +216,7 @@ body {
   cursor: pointer;
 }
 
-.container input:checked ~ span {
+.select-sex input:checked ~ span {
   border: 1px solid #242424;
   background-color: #242424;
   color: #fff;
@@ -227,7 +228,7 @@ body {
   cursor: pointer;
 }
 
-.container input:checked ~ span {
+.select-sex input:checked ~ span {
   border: none;
 }
 
@@ -320,6 +321,19 @@ body {
   content: "";
 }
 
+.save_first {
+  margin-left: 20px !important;
+}
+
+header .logo img {
+  visibility: hidden;
+}
+
+.header-navs .btn-sale {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .item-list {
   display: flex;
   flex-wrap: wrap;
@@ -330,6 +344,8 @@ body {
   width: 25%;
   background-color: #fff;
   color: #242424 !important;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #efefef;
   font-family: "Nunito";
 }
@@ -345,6 +361,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .item-list .item .item_articul {
@@ -358,6 +375,7 @@ body {
   font-weight: lighter;
   font-size: 16px;
   color: #242424 !important;
+  flex-grow: 1;
 }
 
 .item-list .item .item_name:hover {
@@ -1486,10 +1504,117 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='28' height='4' viewBox='0 0 28 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='28' height='4' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
 }
 
-@media (max-width: 1366px) {
-  .add-prod-form .slct .dropdownn .select > svg {
-    width: 25px;
-    height: 25px;
+.footer .row {
+  height: auto !important;
+}
+
+.footer .row .before-line {
+  padding: 0 50px;
+}
+
+.footer .row .before-line:first-child {
+  padding-left: 0;
+}
+
+.footer .row .before-line::after {
+  right: 0;
+  height: 100%;
+  top: 0;
+}
+
+.footer .row .before-line a,
+.footer .row .before-line div {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer .row form {
+  padding-left: 50px;
+}
+
+.footer .row form a,
+.footer .row form div,
+.footer .row form button,
+.footer .row form p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer .row form .custom-radio:first-child span {
+  padding-left: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .container {
+    max-width: 1180px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1550px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .profile_forms .form-group {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .profile_forms .form-group.profile_forms-save {
+    margin-left: 0;
+  }
+
+  .footer .row .before-line {
+    padding: 0 30px;
+  }
+
+  .footer .row form {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .footer .row .before-line {
+    padding: 0 10px;
+  }
+
+  .footer .row form {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-navs .btn-sale {
+    margin-right: 20px;
   }
 }
 

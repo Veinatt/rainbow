@@ -93,6 +93,37 @@ $bl: #242424;
 	background-color: transparent !important;
 }
 
+$container-max-widths: (sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px);
+
+.container {
+
+	@media(min-width:1600px) {
+		max-width:1550px;
+	}
+	@media(min-width:1366px) {
+		max-width:1320px
+	}
+	@media(min-width:1200px) {
+		max-width:1140px
+	}
+	@media(min-width:1200px) {
+		max-width:1180px
+	}
+	@media(min-width:992px) {
+		max-width:960px
+	}
+	@media(min-width:768px) {
+		max-width:720px
+	}
+	@media(min-width:576px) {
+		max-width:540px
+	}
+}
+
 .modal-body {
 	&>div {
 		display: none;
@@ -125,6 +156,7 @@ $bl: #242424;
 	flex-direction: column;
 	background-image: url(../img/howToBuy.png);
 	background-size: cover;
+	background-position: center;
 	font-family: "Nunito";
 	color: #fff !important;
 	font-size: 18px;
@@ -186,6 +218,12 @@ $bl: #242424;
 
 .profile_forms .form-group {
 	margin-bottom: 10px;
+	@media(max-width:1600px) {
+		width: calc((100% - 40px) / 2);
+		&.profile_forms-save {
+			margin-left: 0
+		}
+	}
 }
 
 .select-sex span {
@@ -202,7 +240,7 @@ $bl: #242424;
 	cursor: pointer;
 }
 
-.container input:checked~span {
+.select-sex input:checked~span {
 	border: 1px solid #242424;
 	background-color: #242424;
 	color: #fff;
@@ -214,7 +252,7 @@ $bl: #242424;
 	cursor: pointer;
 }
 
-.container input:checked~span {
+.select-sex input:checked~span {
 	border: none;
 }
 
@@ -306,7 +344,23 @@ $bl: #242424;
 	left: 0;
 	content: "";
 }
-
+.save_first {
+	margin-left: 20px !important;
+}
+header .logo {
+	img {
+		visibility:hidden
+	}
+}
+.header-navs {
+	.btn-sale {
+		display:inline-block;
+		white-space:nowrap;
+		@media(max-width:1199px) {
+			margin-right:20px;
+		}
+	}
+}
 .item-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -317,7 +371,8 @@ $bl: #242424;
 		width: 25%;
 		background-color: #fff;
 		color: $bl !important;
-
+		display: flex;
+		flex-direction: column;
 		img {
 			width: 100%;
 			aspect-ratio: 282 / 346;
@@ -331,6 +386,7 @@ $bl: #242424;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			flex-grow: 1;
 		}
 
 		.item_articul {
@@ -344,7 +400,7 @@ $bl: #242424;
 			font-weight: lighter;
 			font-size: 16px;
 			color: #242424 !important;
-
+			flex-grow: 1;
 			&:hover {
 				text-decoration: underline !important
 			}
@@ -754,11 +810,6 @@ $bl: #242424;
 			margin-left: 10px;
 			border-radius: 50%;
 			transition: all .3s ease-in-out;
-
-			@media (max-width:1366px) {
-				width: 25px;
-				height: 25px;
-			}
 		}
 
 		.dropdownn.active .select>svg {
@@ -850,13 +901,13 @@ $bl: #242424;
 	color: #242424;
 	background-color: #fff;
 	margin-bottom: 10px;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-clip: padding-box;
 	margin-left: 10px
 }
 
@@ -1511,4 +1562,50 @@ $bl: #242424;
 .accordion-button:not(.collapsed)::after {
 	transform: none !important;
 	background-image: url("data:image/svg+xml,%3Csvg width='28' height='4' viewBox='0 0 28 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='28' height='4' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
+}
+
+
+.footer {
+	.row {
+		height:auto !important;
+		.before-line {
+			padding: 0 50px;
+			@media(max-width:1600px) {
+				padding: 0 30px
+			}
+			@media(max-width:1365px) {
+				padding: 0 10px
+			}
+			&:first-child {
+				padding-left:0;
+			}
+			&::after {
+				right:0;
+				height: 100%;
+				top: 0
+			}
+			a,div {
+				margin-left:0;
+				margin-right:0;
+			}
+		}
+		form {
+			padding-left:50px;
+			@media(max-width:1600px) {
+				padding-left: 30px
+			}
+			@media(max-width:1365px) {
+				padding-left: 10px
+			}
+			a,div,button,p {
+				margin-left:0;
+				margin-right:0;
+			}
+			.custom-radio:first-child {
+				span {
+					padding-left: 0
+				}
+			}
+		}
+	}
 }
