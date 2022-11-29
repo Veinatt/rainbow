@@ -26,6 +26,12 @@ header.mobile.background svg path {
 	transition: .3s all
 }
 
+header.mobile {
+	&>button {
+		width: 50px
+	}
+}
+
 .logo {
 	width: 100%;
 	display: flex;
@@ -40,6 +46,10 @@ header.mobile.background svg path {
 		height: 70px;
 		width: auto
 	}
+	@media(max-width:350px) {
+		height: 50px;
+		width: auto
+	}
 }
 
 .section_title.bordered:before,
@@ -47,7 +57,7 @@ header.mobile.background svg path {
 	width: calc((100vw - 257px - 280px) / 2);
 
 	@media (max-width:1366px) {
-		width: calc((100vw - 257px - 200px) / 2);
+		width: calc((100vw - 260px - 200px) / 2);
 	}
 }
 
@@ -58,6 +68,12 @@ header.mobile.background svg path {
 	@media (max-width:1366px) {
 		width: calc((100vw - 456px - 200px) / 2);
 	}
+}
+
+.for_sales {}
+
+.section-why-buy {
+	overflow: hidden;
 }
 
 .section_title.bordered:before {
@@ -119,8 +135,20 @@ header.mobile.background svg path {
 	font-family: "Palatino";
 	font-size: 36px;
 	color: $bl;
-}
 
+	@media(max-width:1024px) {
+		padding: 140px 0 50px 0 !important;
+		font-size: 24px;
+
+	}
+
+	@media(max-width:550px) {
+		padding: 120px 0 30px 0 !important
+	}
+}
+.hw-garantee {
+	display: flex !important;
+}
 .rnb-contacts-cont {
 	position: relative;
 	display: flex;
@@ -132,12 +160,32 @@ header.mobile.background svg path {
 		color: #fff !important;
 	}
 
+	@media(max-width:1024px) {
+		flex-direction: column;
+		background-color: #fff;
+		color: #242424 !important;
+
+		a {
+			color: #242424 !important;
+		}
+		.point {
+			svg {
+				path {
+					fill: #242424
+				}
+			}
+		}
+	}
+
 	.info {
 		.title {
 			padding: 70px 0;
 			font-family: "Palatino";
 			font-size: 36px;
 			color: #fff;
+			@media(max-width:1024px) {
+				display:none
+			}
 		}
 
 		.point {
@@ -159,6 +207,9 @@ header.mobile.background svg path {
 			display: flex;
 			gap: 30px;
 			margin-bottom: 150px;
+			@media(max-width:1024px) {
+				margin-bottom: 50px
+			}
 		}
 	}
 
@@ -168,6 +219,15 @@ header.mobile.background svg path {
 		top: 0;
 		right: 0;
 		height: 100%;
+
+		@media(max-width:1024px) {
+			position: relative;
+			width: 100%;
+			height: 500px
+		}
+		@media(max-width:550px) {
+			height: 400px
+		}
 	}
 }
 
@@ -247,6 +307,14 @@ header.mobile.background svg path {
 	font-weight: lighter;
 	padding: 140px 0;
 
+	@media(max-width:1024px) {
+		font-size: 16px !important;
+	}
+
+	@media(max-width:550px) {
+		background-position-x: 59%
+	}
+
 	a {
 		color: #fff !important;
 		text-decoration: underline !important;
@@ -255,8 +323,14 @@ header.mobile.background svg path {
 	}
 
 	.point {
+		text-align: center;
+
 		&:not(:last-child) {
 			margin-bottom: 7px;
+		}
+
+		@media(max-width:550px) {
+			padding: 0 15px;
 		}
 	}
 
@@ -266,6 +340,9 @@ header.mobile.background svg path {
 		font-size: 36px;
 		color: #fff;
 
+		@media(max-width:1024px) {
+			font-size: 24px;
+		}
 	}
 }
 
@@ -439,11 +516,27 @@ header.mobile.background svg path {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media(max-width:550px) {
+		padding: 0
+	}
 }
 
 .care_block {
+	@media(max-width:1024px) {
+		&>.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 	.section-who-partner_desc {
 		display: block;
+
+		@media(max-width:1024px) {
+			display: flex;
+		}
 	}
 }
 
@@ -571,6 +664,17 @@ header.mobile.background svg path {
 	span {
 		color: #000000;
 	}
+	@media(max-width:1024px) {
+		margin-top: 140px;
+		margin-bottom: 50px;
+		font-size: 24px;
+
+	}
+	@media(max-width:550px) {
+		text-align:center;
+		margin-top: 120px;
+		margin-bottom: 30px;
+	}
 }
 
 .search-sell {
@@ -592,7 +696,31 @@ header.mobile.background svg path {
 		&:not(:nth-child(3n)) {
 			margin-right: 50px;
 		}
-
+		@media(max-width:1400px) {
+			width: calc((100% - 40px) / 3);
+			&:not(:nth-child(3n)) {
+				margin-right: 20px;
+			}
+		}
+		@media(max-width:1024px) {
+			width: calc((100% - 20px) / 2);
+			&:not(:nth-child(3n)) {
+				margin-right: 0px;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 20px;
+			}
+		}
+		@media(max-width:550px) {
+			width: 100%;
+			margin-bottom: 20px;
+			&:not(:nth-child(3n)) {
+				margin-right: 0px;
+			}
+			&:not(:nth-child(2n)) {
+				margin-right: 0px;
+			}
+		}
 		.sell-right {
 			margin-left: 30px;
 		}
@@ -600,7 +728,13 @@ header.mobile.background svg path {
 		.sell-name {
 			font-family: "Palantino";
 			font-size: 36px;
-			color: #000000
+			color: #000000;
+			@media(max-width:1400px) {
+				font-size: 30px
+			}
+			@media(max-width:1024px) {
+				font-size: 24px
+			}
 		}
 
 		.sell-reg {
@@ -628,7 +762,19 @@ header.mobile.background svg path {
 			object-fit: cover;
 			border-radius: 50%;
 			margin-bottom: 50px;
+			@media(max-width:1024px) {
+				margin-bottom: 30px
+			}
+			@media(max-width:550px) {
+				width: 100px;
+			}
 		}
+	}
+}
+
+body.catalog {
+	@media(max-width:1024px) {
+		padding-top: 90px !important
 	}
 }
 
@@ -638,7 +784,27 @@ header.mobile.background svg path {
 		max-width: 302px;
 		background-color: #fff;
 		color: $bl !important;
-
+		@media(max-width:1024px) {
+			max-width: 33.33333333333333% !important;
+			&:nth-child(1n) {
+				border: 1px solid #efefef;
+			}
+			&:not(:nth-child(3n)) {
+				border-right: none;
+			}
+		}
+		@media(max-width:550px) {
+			max-width: 50% !important;
+			&:nth-child(1n) {
+				border: 1px solid #efefef;
+			}
+			&:not(:nth-child(2n)) {
+				border-right: none;
+			}
+		}
+		@media(max-width:350px) {
+			max-width: 100% !important
+		}
 		img {
 			width: 100%;
 			aspect-ratio: 302 / 346;
@@ -648,7 +814,7 @@ header.mobile.background svg path {
 		border: 1px solid #efefef;
 		font-family: 'Nunito';
 
-		&:not(:last-child) {
+		&:not(:nth-child(4n)) {
 			border-right: none;
 		}
 
@@ -1007,7 +1173,11 @@ header.mobile.background svg path {
 	font-weight: 400;
 	line-height: 1.5;
 	background-clip: padding-box;
-	margin-left: 10px
+	margin-left: 10px;
+
+	@media(max-width:550px) {
+		max-width: 100%
+	}
 }
 
 .how_work_content {
@@ -1601,7 +1771,15 @@ header.mobile.background svg path {
 }
 
 .abt-title {
-	padding: 50px 0 75px 0 !important
+	padding: 50px 0 75px 0 !important;
+
+	@media(max-width:1024px) {
+		padding: 140px 0 50px 0 !important
+	}
+
+	@media(max-width:550px) {
+		padding: 120px 0 30px 0 !important
+	}
 }
 
 .reasons-title {
@@ -1643,6 +1821,35 @@ header.mobile.background svg path {
 	border-left: none;
 }
 
+.collapse-block {
+	@media(max-width:550px) {
+		padding: 0;
+		margin-bottom: 50px;
+
+		.container {
+			padding: 0
+		}
+	}
+}
+
+.row {
+	@media(max-width:550px) {
+		margin-right: 0;
+		margin-left: 0;
+
+		&>* {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.section-why-buy .col-10 {
+	@media(max-width:550px) {
+		padding: 10px 0 0 20px;
+	}
+}
+
 .accordion-button {
 	cursor: pointer;
 	font-family: "Palatino";
@@ -1651,11 +1858,33 @@ header.mobile.background svg path {
 	font-size: 32px;
 	line-height: 43px;
 	color: #242424 !important;
+
+	@media(max-width:1024px) {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	@media(max-width:550px) {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 15px;
+	}
+}
+
+.accordion-body {
+	@media(max-width:550px) {
+		padding: 15px;
+	}
 }
 
 .accordion-button::after {
 	background-position: center;
 	background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='12' width='28' height='4' fill='%23242424'/%3E%3Crect x='12' y='28' width='28' height='4' transform='rotate(-90 12 28)' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
+
+	@media(max-width:550px) {
+		width: 17px;
+		height: 17px;
+	}
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -1663,6 +1892,9 @@ header.mobile.background svg path {
 	background-image: url("data:image/svg+xml,%3Csvg width='28' height='4' viewBox='0 0 28 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='28' height='4' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
 }
 
+.footer-two a {
+	margin-left: 0
+}
 
 .footer {
 	.row {
@@ -1683,10 +1915,23 @@ header.mobile.background svg path {
 				padding-left: 0;
 			}
 
+			@media(max-width:1024px) {
+				&:nth-child(4) {
+					padding-left: 0;
+
+					&::after {
+						content: '';
+						right: 0 !important;
+						height: calc(100%);
+						top: 0 !important;
+					}
+				}
+			}
+
 			&::after {
-				right: 0;
-				height: 100%;
-				top: 0
+				right: 0 !important;
+				height: calc(100% + 30px);
+				top: 0 !important;
 			}
 
 			a,
@@ -1705,6 +1950,10 @@ header.mobile.background svg path {
 
 			@media(max-width:1365px) {
 				padding-left: 10px
+			}
+
+			@media(max-width:550px) {
+				padding-left: 0px
 			}
 
 			a,

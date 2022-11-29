@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
     })
 
-    if (width < 1024) {
+    if (width <= 1024) {
         document.addEventListener('scroll', function(){
             if (window.scrollY < 100){
                 document.getElementsByClassName('mobile')[0].classList.remove('background')

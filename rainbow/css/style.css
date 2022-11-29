@@ -41,6 +41,10 @@ header.mobile.background svg path {
   transition: 0.3s all;
 }
 
+header.mobile > button {
+  width: 50px;
+}
+
 .logo {
   width: 100%;
   display: flex;
@@ -62,6 +66,10 @@ header.mobile.background svg path {
   width: calc((100vw - 456px - 280px) / 2);
 }
 
+.section-why-buy {
+  overflow: hidden;
+}
+
 .rnb-title {
   width: 100%;
   text-align: center;
@@ -69,6 +77,10 @@ header.mobile.background svg path {
   font-family: "Palatino";
   font-size: 36px;
   color: #242424;
+}
+
+.hw-garantee {
+  display: flex !important;
 }
 
 .rnb-contacts-cont {
@@ -168,6 +180,10 @@ header.mobile.background svg path {
   text-decoration: underline !important;
   text-underline-offset: 3px;
   font-weight: 500;
+}
+
+.rnb-htb-cont .point {
+  text-align: center;
 }
 
 .rnb-htb-cont .point:not(:last-child) {
@@ -544,7 +560,7 @@ header.mobile.background svg path {
      object-fit: cover;
 }
 
-.catalog.items .item:not(:last-child) {
+.catalog.items .item:not(:nth-child(4n)) {
   border-right: none;
 }
 
@@ -1527,6 +1543,10 @@ header.mobile.background svg path {
   background-image: url("data:image/svg+xml,%3Csvg width='28' height='4' viewBox='0 0 28 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='28' height='4' fill='%23242424'/%3E%3C/svg%3E%0A") !important;
 }
 
+.footer-two a {
+  margin-left: 0;
+}
+
 .footer .row {
   height: auto !important;
 }
@@ -1540,9 +1560,9 @@ header.mobile.background svg path {
 }
 
 .footer .row .before-line::after {
-  right: 0;
-  height: 100%;
-  top: 0;
+  right: 0 !important;
+  height: calc(100% + 30px);
+  top: 0 !important;
 }
 
 .footer .row .before-line a,
@@ -1673,10 +1693,24 @@ header.mobile.background svg path {
   }
 }
 
+@media (max-width: 1400px) {
+  .search-cont .sell-card {
+    width: calc((100% - 40px) / 3);
+  }
+
+  .search-cont .sell-card:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+
+  .search-cont .sell-card .sell-name {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 1366px) {
   .section_title.bordered:before,
   .section_title.bordered:after {
-    width: calc((100vw - 257px - 200px) / 2);
+    width: calc((100vw - 260px - 200px) / 2);
   }
 
   .faq .section_title.bordered:before,
@@ -1706,11 +1740,242 @@ header.mobile.background svg path {
     height: 70px;
     width: auto;
   }
+
+  .rnb-title {
+    padding: 140px 0 50px 0 !important;
+    font-size: 24px;
+  }
+
+  .rnb-contacts-cont {
+    flex-direction: column;
+    background-color: #fff;
+    color: #242424 !important;
+  }
+
+  .rnb-contacts-cont a {
+    color: #242424 !important;
+  }
+
+  .rnb-contacts-cont .point svg path {
+    fill: #242424;
+  }
+
+  .rnb-contacts-cont .info .title {
+    display: none;
+  }
+
+  .rnb-contacts-cont .info .soc {
+    margin-bottom: 50px;
+  }
+
+  .rnb-contacts-cont #map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+
+  .rnb-htb-cont {
+    font-size: 16px !important;
+  }
+
+  .rnb-htb-cont .sub-title {
+    font-size: 24px;
+  }
+
+  .care_block > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .care_block .section-who-partner_desc {
+    display: flex;
+  }
+
+  .search-title {
+    margin-top: 140px;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
+  .search-cont .sell-card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .search-cont .sell-card:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+
+  .search-cont .sell-card:not(:nth-child(2n)) {
+    margin-right: 20px;
+  }
+
+  .search-cont .sell-card .sell-name {
+    font-size: 24px;
+  }
+
+  .search-cont .sell-card img {
+    margin-bottom: 30px;
+  }
+
+  body.catalog {
+    padding-top: 90px !important;
+  }
+
+  .catalog.items .item {
+    max-width: 33.3333333333% !important;
+  }
+
+  .catalog.items .item:nth-child(1n) {
+    border: 1px solid #efefef;
+  }
+
+  .catalog.items .item:not(:nth-child(3n)) {
+    border-right: none;
+  }
+
+  .abt-title {
+    padding: 140px 0 50px 0 !important;
+  }
+
+  .accordion-button {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .footer .row .before-line:nth-child(4) {
+    padding-left: 0;
+  }
+
+  .footer .row .before-line:nth-child(4)::after {
+    content: "";
+    right: 0 !important;
+    height: 100%;
+    top: 0 !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .rnb-title {
+    padding: 120px 0 30px 0 !important;
+  }
+
+  .rnb-contacts-cont #map {
+    height: 400px;
+  }
+
+  .rnb-htb-cont {
+    background-position-x: 59%;
+  }
+
+  .rnb-htb-cont .point {
+    padding: 0 15px;
+  }
+
+  .section-who-partner_desc {
+    padding: 0;
+  }
+
+  .search-title {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  .search-cont .sell-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-cont .sell-card:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+
+  .search-cont .sell-card:not(:nth-child(2n)) {
+    margin-right: 0px;
+  }
+
+  .search-cont .sell-card img {
+    width: 100px;
+  }
+
+  .catalog.items .item {
+    max-width: 50% !important;
+  }
+
+  .catalog.items .item:nth-child(1n) {
+    border: 1px solid #efefef;
+  }
+
+  .catalog.items .item:not(:nth-child(2n)) {
+    border-right: none;
+  }
+
+  .sub-mit {
+    max-width: 100%;
+  }
+
+  .abt-title {
+    padding: 120px 0 30px 0 !important;
+  }
+
+  .collapse-block {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .collapse-block .container {
+    padding: 0;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-why-buy .col-10 {
+    padding: 10px 0 0 20px;
+  }
+
+  .accordion-button {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px;
+  }
+
+  .accordion-body {
+    padding: 15px;
+  }
+
+  .accordion-button::after {
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer .row form {
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 500px) {
   .add-prod-form .slct {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo svg {
+    height: 50px;
+    width: auto;
+  }
+
+  .catalog.items .item {
+    max-width: 100% !important;
   }
 }
 
