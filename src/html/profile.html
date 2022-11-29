@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 profile-links">
-                    <button class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
+                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
                     <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
                     <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
-                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
+                    <button  class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
                 </div>
                 <div class="col-xl-9 pl-0">
                     <div class="profile-wrapper">
@@ -115,7 +115,7 @@
                                 <label class="label" for="house">Дом</label>
                                 <input type="text" class="form-control input" id="house" placeholder="12" name="house">
                             </div>
-                            <div class="form-group profile_forms-house">
+                            <div class="form-group profile_forms-house house-kv">
                                 <label class="label" for="appart">Квартира</label>
                                 <input type="text" class="form-control input" id="appart" placeholder="2" name="appart">
                             </div>
