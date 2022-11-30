@@ -127,9 +127,7 @@ $(document).ready(function () {
         links.forEach(function(item) {
             document.querySelector(".footer-two-container .d").append(item)
         })
-        const howWork = new Swiper('.how_work-padding', {
-            autoplay: true,
-        });
+        
 
         let productImgs = document.querySelector(".product_images")
         let productImgsChilds = productImgs !== null ? productImgs.childNodes : null
