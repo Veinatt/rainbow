@@ -1195,7 +1195,7 @@ header.mobile {
 	}
 }
 
-body.catalog {
+main.catalog {
 	@media(max-width:1024px) {
 		padding-top: 90px !important
 	}
@@ -2760,4 +2760,9 @@ art-page {
 			}
 		}
 	}
+}
+
+.mobile_filter-wrapper.display-mobile {
+	z-index: 300;
+	padding-top: 30px;
 }

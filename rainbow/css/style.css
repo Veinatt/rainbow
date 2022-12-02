@@ -1703,6 +1703,11 @@ art-page .cart-cont-main .cart-contt .cart-total button {
   padding-left: 0;
 }
 
+.mobile_filter-wrapper.display-mobile {
+  z-index: 300;
+  padding-top: 30px;
+}
+
 @media (min-width: 576px) {
   .slides .swiper-button-prev {
     left: calc((100vw - 540px) / 2);
@@ -2066,7 +2071,7 @@ art-page .cart-cont-main .cart-contt .cart-total button {
     max-width: 300px;
   }
 
-  body.catalog {
+  main.catalog {
     padding-top: 90px !important;
   }
 
