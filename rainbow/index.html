@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221202120632" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221207145040" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap&_v=20221202120632"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap&_v=20221207145040"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221202120632" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221207145040" />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20221202120632" />
-    <link rel="stylesheet" href="files/rainbow_front/css/main.css?_v=20221202120632">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221202120632">
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20221207145040" />
+    <link rel="stylesheet" href="files/rainbow_front/css/main.css?_v=20221207145040">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221207145040">
     <title></title>
 </head>
 
@@ -412,572 +412,160 @@
         </div>
     </div>
 </div>
-    <main>
-    <div class="profile-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 profile-links">
-                    <button id="defaultOpen" class="tablink" onclick="openTab(event, 'tab_profile')">Профиль</button>
-                    <button class="tablink" onclick="openTab(event, 'tab_favorite')">Избранное</button>
-                    <button class="tablink" onclick="openTab(event, 'tab_orders')">Заказы</button>
-                    <button  class="tablink" onclick="openTab(event, 'tab_products')">Товары</button>
-                </div>
-                <div class="col-xl-9 pl-0">
-                    <div class="profile-wrapper">
-                        <div class="row">
-                            <div class="col-xl-8 col-md-8 d-flex">
-                                <div class="profile_image">
-                                    <picture><source srcset="img/profile_image.webp" type="image/webp"><img src="img/profile_image.png" alt=""></picture>
-                                </div>
-                                <div class="profile_info">
-                                    <div class="profile-user_name">Кирилл Дейкун</div>
-                                    <div class="profile-user_withASS">Вы с нами с марта 2022</div>
-                                    <div class="profile-user_items">Ваши товары: <b>36</b></div>
-                                </div>
-                            </div>
-                            <div
-                                class="col-4 d-flex flex-column align-items-end justify-content-center profile_change_photo">
-                                <div class="upload">
-                                    <button onclick="document.getElementById('file').click();"
-                                        class="cng-btn cng-btn-photo">Изменить фото</button>
-                                    <input type="file" style="display:none;"
-                                        accept="image/png, image/gif, image/jpeg, image/jpg" id="file" name="image"
-                                        required='required' />
-                                </div>
-                                <button class="cng-btn">Выйти</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-3"></div>
-                <div class="col-12 col-xl-9 pl-0">
-                    <div class="profile_edit-wrapper tabcont" id="tab_profile">
-                        <div class="profile_name-form">
-                            Личная информация
-                            <a href="#" class="change">Изменить пароль</a>
-                        </div>
-                        <form class="profile_forms">
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="user_name">Имя пользователя</label>
-                                <input type="text" class="form-control input" id="user_name" placeholder="Ваше имя"
-                                    name="username" value="Кирилл Дейкун">
-                            </div>
-                            <div class="form-group profile_forms-sex">
-                                <label class="label" for="user_name">Пол</label>
-                                <div class="select-sex">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark">Мужской</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark">Женский</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group profile_forms-email">
-                                <label class="label" for="user_email">E-mail</label>
-                                <input type="email" class="form-control input" id="user_email" placeholder="Ваша почта"
-                                    name="user_email" value="info@idile.ru">
-                            </div>
-                            <div class="form-group profile_forms-birthday">
-                                <label class="label" for="birthday">Дата рождения</label>
-                                <input type="date" class="form-control input" id="birthday" placeholder="Дата рождения"
-                                    name="birthday" value="01.04.2022">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="phone">Телефон</label>
-                                <input type="email" class="form-control input" id="phone"
-                                    placeholder="+7 (888) 555-35-35" name="phone" value="+7 (888) 555-35-35">
-                            </div>
-                            <div class="form-group profile_forms-save save_first">
-                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
-                            </div>
-                        </form>
-                        <div class="profile_name-form">
-                            Мои адреса
-                        </div>
-                        <form class="profile_forms">
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="last_name">Фамилия</label>
-                                <input type="text" class="form-control input" id="last_name" placeholder="Иванов"
-                                    name="last_name">
-                            </div>
-                            <div class="form-group profile_forms-ml20">
-                                <label class="label" for="city">Город</label>
-                                <input type="text" class="form-control input" id="city" placeholder="Москва"
-                                    name="city">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="first_name">Имя</label>
-                                <input type="text" class="form-control input" id="first_name" placeholder="Иван"
-                                    name="first_name">
-                            </div>
-                            <div class="form-group profile_forms-ml20">
-                                <label class="label" for="address">Адрес</label>
-                                <input type="text" class="form-control input" id="address" placeholder="ул, Ленина"
-                                    name="address">
-                            </div>
-                            <div class="form-group profile_forms-username">
-                                <label class="label" for="patronymic">Отчество</label>
-                                <input type="text" class="form-control input" id="patronymic" placeholder="Отчество"
-                                    name="patronymic">
-                            </div>
-                            <div class="form-group profile_forms-house">
-                                <label class="label" for="house">Дом</label>
-                                <input type="text" class="form-control input" id="house" placeholder="12" name="house">
-                            </div>
-                            <div class="form-group profile_forms-house house-kv">
-                                <label class="label" for="appart">Квартира</label>
-                                <input type="text" class="form-control input" id="appart" placeholder="2" name="appart">
-                            </div>
-                            <div class="form-group profile_forms-save">
-                                <button class="profile_forms-savebutton" type="submit">Сохранить</button>
-                            </div>
-                        </form>
-                        <div class="profile_name-form">
-                            Платежные данные
-                        </div>
-                        <div class="profile_forms-payment">
-                            <p>
-                                Платежные карты и реквизиты, которые <br> вы указали на нашем сайте. Вы сможете
-                                использовать
-                                <br> их для оплаты товаров или получения выплат за продажи
-                            </p>
-                            <div class="profile_forms-cards">
-                                <div class="profile_forms-cards_wrapper">
-                                    <label class="check option" for="payment">
-                                        <input class="check__input" type="checkbox" name="payment" id="payment">
-                                        <span class="check__box"></span>
-                                        <span class="check__box-text"></span>
-                                    </label>
-                                    <div class="custom-wrapper-cards">
-                                        <div class="span">
-                                            <div><b>Реквизиты (Юр.лицо, ИП)</b></div>
-                                            <div class="muted">У вас нет добавленных реквизитов</div>
-                                        </div>
-                                        <a href="#">Добавить</a>
-                                    </div>
-                                </div>
-                                <div class="profile_forms-cards_wrapper">
-                                    <label class="check option" for="cards">
-                                        <input class="check__input" type="checkbox" name="payment" id="cards">
-                                        <span class="check__box"></span>
-                                        <span class="check__box-text"></span>
-                                    </label>
-                                    <div class="custom-wrapper-cards">
-                                        <div class="span">
-                                            <div><b>Карта для оплаты</b></div>
-                                            <div class="muted">Дебетовая карта МИР **** **** **** 4567</div>
-                                        </div>
-                                        <a href="#">Удалить</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_favorite">
-                        <div class="fav-stat">
-                            Вам нравится:&nbsp;<span>7</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/his-sec-2.webp" type="image/webp"><img src="img/his-sec-2.jpg" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_orders">
-                        <div class="fav-stat">
-                            Ваши заказы:&nbsp;<span>6</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <div class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </div>
-                                    <div class="item_price">85 800 р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_list-wrapper tabcont" id="tab_products">
-                        <div class="fav-stat">
-                            Ваши товары:&nbsp;<span>0</span>
-                        </div>
-                        <div class="item-list">
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цветаааааа
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальтоооооооо демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонноеееееееееее <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-130-IF-Qйййййй</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_img">
-                                    <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                                </div>
-                                <div class="item-border">
-                                    <div class="item_articul">Арт: 9242-13022222222222-IF-Q</div>
-                                    <a href="#" class="item_name">
-                                        Пальто демисезонное <br> Драповое бежевого цвета
-                                    </a>
-                                    <div class="item_price">85 800 р.</div>
-                                    <button type="button" class="add-sale" data-bs-toggle="modal"
-                                        data-bs-target="#saleModal">Добавить скидку</button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prod-add-cont">
-                                    <svg width="77" height="77" viewBox="0 0 77 77" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0 36.96C0 35.259 1.37896 33.88 3.08 33.88H73.92C75.621 33.88 77 35.259 77 36.96V40.04C77 41.741 75.621 43.12 73.92 43.12H3.08C1.37896 43.12 0 41.741 0 40.04V36.96Z"
-                                            fill="white" />
-                                        <path
-                                            d="M36.96 77C35.259 77 33.88 75.621 33.88 73.92V3.08C33.88 1.37896 35.259 2.08982e-07 36.96 1.34628e-07L40.04 0C41.741 -7.43547e-08 43.12 1.37896 43.12 3.08L43.12 73.92C43.12 75.621 41.741 77 40.04 77H36.96Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="prod-add-text">
-                                    Добавить товар
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main class="cart-page">
+    <div class="container">
+        <div class="cart-cont-empty cart-hid">
+            <div class="center-cont">
+                <div class="title">Ваша корзина пока пуста</div>
+                <a href="#">Вернуться в каталог</a>
             </div>
         </div>
-    </div>
-
-    <!--Modal Login-->
-    <div class="modal fade" id="saleModal" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header p-0">
-                    <div class="sale-title">
-                        Добавить скидку к товару:
-                    </div>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z"
-                                fill="#242424" />
-                            <path
-                                d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z"
-                                fill="#242424" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-signin active">
-                        
-                        <div class="item">
-                            <div class="item_img">
-                                <picture><source srcset="img/item.webp" type="image/webp"><img src="img/item.png" alt=""></picture>
-                            </div>
-                            <div class="item-border">
-                                <div class="item_articul">Арт: 9242-13022222222222-IF-Q</div>
-                                <a href="#" class="item_name">
-                                    Пальто демисезонное <br> Драповое бежевого цвета
-                                </a>
-                                <div class="item_price">85 800 р.</div>
-                            </div>
-                        </div>
-                        <div class="modal-form">
-                            <form action="">
-                                <div class="salee-title">
-                                    Какая будет скидка?
-                                </div>
-                                <div class="select-sale">
-                                        <label>
-                                            <input type="radio" checked="checked" name="sale">
-                                            <span class="checkmark"><div>0%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>10%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>20%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>30%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>40%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>50%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>60%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>70%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>80%</div></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="sale">
-                                            <span class="checkmark"><div>90%</div></span>
-                                        </label>
-                                </div>
-                                <div class="form-submit">
-                                    <button>Добавить скидку к товару</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div class="cart-cont-main cart-hid">
+            <div class="rnb-title">
+                Корзина
             </div>
+            <form action="" class="cart-contt">
+                <div class="cart-prods col-12 col-xl-8">
+                    <div class="f-roww roww">
+                        <div class="col-11 col-sm-7 col-lg-6">
+                            Товар:
+                        </div>
+                        <div class="col-1 col-sm-2 col-lg-2">
+                            Кол-во:
+                        </div>
+                        <div class="col-sm-3 col-lg-4">
+                            Цена:
+                        </div>
+                    </div>
+                    <div class="prod-in-cart roww">
+                        <a href="" class="cart-prods-prod col-10 col-sm-7 col-lg-6">
+                            <picture><source srcset="img/product.webp" type="image/webp"><img src="img/product.png" alt=""></picture>
+                            <div class="pr-prod-cont">
+                                <div class="title">Пальто демисезонное Драповое бежевого цвета</div>
+                                <div class="price">
+                                    1320,00 руб.
+                                </div>
+                                <div class="remove">
+                                    Удалить
+                                </div>
+                            </div>
+                        </a>
+                        <div class="cart-prods-count col-2">
+                            <input type="text" size="3" value="1" class="count">
+                            <div class="counters">
+                                <label>
+                                    <input type="button" value="-" id="plus" onclick="plus()">
+                                    <div class="c-plus">
+                                        <div>+</div>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="button" value="-" id="moins" onclick="minus()">
+                                    <div class="c-minus">
+                                        <div>-</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="cart-prods-price col-sm-3 col-lg-4">
+                            <div class="price">
+                                1320,00 руб.
+                            </div>
+                            <div class="remove">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.17564 7.483L15.8076 1.28213C15.9387 1.13904 16.0072 0.954975 15.9994 0.766723C15.9916 0.57847 15.9082 0.399895 15.7657 0.266681C15.6232 0.133468 15.4322 0.0554274 15.2309 0.048156C15.0295 0.0408846 14.8327 0.104918 14.6796 0.227459L8.04764 6.42833L1.41563 0.219979C1.26499 0.0791288 1.06068 0 0.847635 0C0.634593 0 0.430278 0.0791288 0.279635 0.219979C0.128992 0.360829 0.0443614 0.551863 0.0443614 0.751055C0.0443614 0.950247 0.128992 1.14128 0.279635 1.28213L6.91964 7.483L0.279635 13.6839C0.195889 13.7509 0.127873 13.8334 0.0798545 13.9262C0.0318359 14.019 0.00485175 14.1201 0.000596153 14.2231C-0.00365944 14.3261 0.0149049 14.4289 0.0551246 14.5249C0.0953442 14.6208 0.156351 14.708 0.234315 14.7809C0.312278 14.8538 0.405516 14.9109 0.508176 14.9485C0.610836 14.9861 0.720702 15.0034 0.830878 14.9994C0.941053 14.9955 1.04916 14.9702 1.14841 14.9253C1.24766 14.8804 1.33592 14.8168 1.40763 14.7385L8.04764 8.53767L14.6796 14.7385C14.8327 14.8611 15.0295 14.9251 15.2309 14.9178C15.4322 14.9106 15.6232 14.8325 15.7657 14.6993C15.9082 14.5661 15.9916 14.3875 15.9994 14.1993C16.0072 14.011 15.9387 13.827 15.8076 13.6839L9.17564 7.483Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total col-12 col-xl-4">
+                    <div class="title">
+                        Cумма заказа
+                    </div>
+                    <div class="total-price">
+                        Итого: ____________________ &nbsp;<span>1320,00 руб.</span>
+                    </div>
+                    <button type="submit">Оформить заказ</button>
+                </div>
+            </form>
+        </div>
+        <div class="cart-cont-main">
+            <div class="rnb-title">
+                Корзина
+            </div>
+            <form action="" class="cart-contt">
+                <div class="cart-inputs col-12 col-xl-8">
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="name">Имя Фамилия*</label>
+                        <input type="text" class="form-control input" id="тname" placeholder="Иван Иванов" name="name">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="address">Адрес*</label>
+                        <input type="text" class="form-control input" id="address" placeholder="Попова 23"
+                            name="address">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="floor">Крыло, подъезд, этаж и т.п.*</label>
+                        <input type="text" class="form-control input" id="floor" placeholder="15а, 111" name="floor">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="place">Населённый пункт*</label>
+                        <input type="text" class="form-control input" id="place" placeholder="д. Копище" name="place">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="region">Область / район*</label>
+                        <input type="text" class="form-control input" id="region" placeholder="Москва" name="region">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="postcode">Почтовый индекс*</label>
+                        <input type="text" class="form-control input" id="postcode" placeholder="202002"
+                            name="postcode">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="tel">Телефон*</label>
+                        <input type="tel" class="form-control input" id="tel" placeholder="+7 999 555 35 35" name="tel">
+                    </div>
+                    <div class="form-group profile_forms-username">
+                        <label class="label" for="mail">E-mail*</label>
+                        <input type="mail" class="form-control input" id="mail" placeholder="rainbow@e-mail.ru"
+                            name="mail">
+                    </div>
+                </div>
+                <div class="cart-total col-12 col-xl-4">
+                    <div class="title">
+                        Cумма заказа
+                    </div>
+                    <div class="prod-price">
+                        <div class="pr-name">
+                            <div>Пальто демисезонное ffffffffffffffff fffffffffffffffff ffffffffffffffff&nbsp;</div>
+                            <div class="order-prod-count">x 1</div>
+                        </div>
+                        <div class="doted"></div>
+                        <div>1320,00 руб.</div>
+                    </div>
+                    <div class="prod-price">
+                        <div class="pr-name">
+                            <div>Пальто сезонное&nbsp;</div>
+                            <div class="order-prod-count">x 2</div>
+                        </div>
+                        <div class="doted"></div>
+                        <div>1320,00 руб.</div>
+                    </div>
+                    <div class="total-price">
+                        <div>Итого:</div>
+                        <div class="doted"></div>
+                        <div>1320,00 руб.</div>
+                    </div>
+                    <button type="submit">Оформить заказ</button>
+                </div>
+            </form>
         </div>
     </div>
 </main>
-<script>
-    function openTab(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcont");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    document.addEventListener("DOMContentLoaded", function (event) {
-        document.getElementById("defaultOpen").click();
-    });
-</script>
     <footer>
     <div class="footer">
         <div class="container">
@@ -1098,16 +686,16 @@
         Профиль
     </a>
 </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221202120632"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221207145040"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?_v=20221202120632"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?_v=20221207145040"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20221202120632"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221202120632"></script>
-    <script src="js/app.min.js?_v=20221202120632"></script>
-    <script src="files/rainbow_front/js/main.js?_v=20221202120632"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20221207145040"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221207145040"></script>
+    <script src="js/app.min.js?_v=20221207145040"></script>
+    <script src="files/rainbow_front/js/main.js?_v=20221207145040"></script>
 </body>
 
 </html>
